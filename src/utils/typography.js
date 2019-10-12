@@ -1,20 +1,23 @@
 import Typography from 'typography'
-import Wordpress2016 from 'typography-theme-wordpress-2016'
+import ElkGen from 'typography-theme-elk-glen'
 
-Wordpress2016.overrideThemeStyles = () => {
-  return {
-    'a.gatsby-resp-image-link': {
-      boxShadow: `none`,
-    },
+ElkGen.overrideThemeStyles = () => ({
+  'a.gatsby-resp-image-link': {
+    boxShadow: 'none'
+  },
+  'h3 a, h1 a': {
+    backgroundImage: 'none'
+  },
+  'h1 a:hover, h3 a:hover': {
+    color: '#2d248a'
   }
-}
 
-delete Wordpress2016.googleFonts
+})
 
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(ElkGen)
 
 // Hot reload typography in development.
-if (process.env.NODE_ENV !== `production`) {
+if (process.env.NODE_ENV !== 'production') {
   typography.injectStyles()
 }
 

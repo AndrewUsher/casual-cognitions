@@ -1,0 +1,76 @@
+---
+title: 'When Does React Rerender Components?'
+date: '2018-09-10'
+---
+
+React is known for its performance. Because it has a virtual DOM and only updates the real DOM when required it can be much faster than updating the DOM all the time, even to display the same information. However, React’s “smarts” only go so far (at the moment!), and it’s our job to know its expectations and limitations so we don’t accidentally hurt performance.
+
+One of the aspects we need to be aware of is how React decides when to re-render a component. Not as in “update the DOM render,” but just to call the render method to change the virtual DOM. We can help React out by telling it when it should and shouldn’t render. Let’s look at both of those in turn...
+
+### The component’s state changes
+
+A re-render can only be triggered if a component’s state has changed. The state can change from a props change, or from a direct setState change. The component gets the updated state and React decides if it should re-render the component. Unfortunately, by default React is incredibly simplistic and basically re-renders everything all the time.
+
+Component changed? Re-render. Parent changed? Re-render. Section of props that doesn't actually impact the view changed? Re-render.
+
+```js
+class Todo extends React.Component {
+  componentDidMount() {
+    setInterval(() => {
+      this.setState(() => {
+        console.log('setting state')
+        return 'nothing'
+      })
+    }, 1000)
+  }
+
+  render() {
+    console.log('render called')
+    return <div>...</div>
+  }
+}
+```
+
+In this (massively contrived) example the Todo will re-render every second, even though the render method doesn’t use unseen at all. In fact, unseen doesn’t even change its value! You can check out a working version of this on CodePen.
+
+Well, but re-rendering all the time isn’t helpful...
+
+I mean, I appreciate that React is being super careful. It would be worse if the state changed and the component didn’t render when it was supposed to. How would I know about that new message my friend sent me?! I’d miss it, so she’d probably assume it was intentional, then she’d stop talking to me, and the whole friendship would be ruined. All for the want of a little green dot not re-rendering. High stakes. Re-rendering is definitely the safe option.
+
+But re-rendering seems expensive (and your example is melodramatic)
+
+Yes, re-rendering unnecessarily does waste cycles and is generally not a good idea. However, React can’t “just know” when it’s safe to ignore parts of the state. So it plays it safe and re-renders whenever there’s a change to the state, important or not.
+
+How can we tell React to skip re-rendering?
+
+### shouldComponentUpdate method
+
+By default, `shouldComponentUpdate` returns true. That’s what causes the “update everything all the time” we saw above. However, you can overwrite `shouldComponentUpdate` to give it more “smarts” if you need the performance boost. Instead of letting React re-render all the time, you can tell React when you don’t want to trigger a re-render.
+
+When React comes to render the component it will run `shouldComponentUpdate` and see if it returns true (the component should update, a.k.a. re-render) or false (React can skip the re-render this time). So you’ll need to overwrite `shouldComponentUpdate` to return true or false as needed to tell React when to re-render and when to skip.
+
+When you use `shouldComponentUpdate` you’ll need to decide which bits of data actually matter for the re-render. Let’s go back to our example:
+
+```js
+class Todo extends React.Component {
+  componentDidMount() {
+    setInterval(() => {
+      this.setState(() => {
+        console.log('setting state')
+        return 'nothing'
+      })
+    }, 1000)
+  }
+
+  shouldComponentUpdate(nextProps) {
+    const hasDifferentTitle = this.props.title !== nextProps.title
+    const hasDifferentDone = this.props.done !== nextProps.done
+    return hasDifferentTitle || hasDifferentDone
+  }
+
+  render() {
+    console.log('render called')
+    return <div>...</div>
+  }
+}
+```

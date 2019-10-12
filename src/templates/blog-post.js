@@ -1,47 +1,45 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import MDXRenderer from 'gatsby-mdx/mdx-renderer'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
-import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
-  render() {
+  render () {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title={post.frontmatter.title} description={post.excerpt} />
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
-            display: `block`,
+            display: 'block',
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(-1)
           }}
         >
           {post.frontmatter.date}
         </p>
-        <MDXRenderer>{post.code.body}</MDXRenderer>
+        <MDXRenderer>{post.body}</MDXRenderer>
         <hr
           style={{
-            marginBottom: rhythm(1),
+            marginBottom: rhythm(1)
           }}
         />
         <Bio />
 
         <ul
           style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+            listStyle: 'none',
+            padding: 0
           }}
         >
           <li>
@@ -75,15 +73,11 @@ export const pageQuery = graphql`
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
       }
-      code {
-        body
-      }
+      body
     }
   }
 `
