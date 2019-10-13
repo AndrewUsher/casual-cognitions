@@ -52,6 +52,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -67,6 +68,8 @@
   "scripts": {
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "clean": "rm -rf public",
+    "deploy": "gh-pages -d public",
     "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 gatsby develop --https",
     "build": "gatsby build"
   }
