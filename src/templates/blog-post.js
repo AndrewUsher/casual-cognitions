@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
+import { TransitionLink } from '../components/TransitionLink'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
@@ -44,16 +44,16 @@ class BlogPostTemplate extends React.Component {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <TransitionLink to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
-              </Link>
+              </TransitionLink>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <TransitionLink to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
-              </Link>
+              </TransitionLink>
             )}
           </li>
         </ul>

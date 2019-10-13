@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import { TransitionLink } from '../components/TransitionLink'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -23,9 +24,9 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4)
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <TransitionLink style={{ boxShadow: 'none' }} to={node.fields.slug}>
                   {title}
-                </Link>
+                </TransitionLink>
               </h3>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />

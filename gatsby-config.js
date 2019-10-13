@@ -7,6 +7,7 @@ module.exports = {
     }
   },
   plugins: [
+    'gatsby-plugin-transition-link',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
