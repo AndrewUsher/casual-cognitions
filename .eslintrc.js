@@ -9,4 +9,7 @@ module.exports = {
   globals: {
     graphql: false,
   },
+  rules: {
+    'react/prop-types': 0,
+  },
 }
