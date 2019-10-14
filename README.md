@@ -4,5 +4,5 @@
 [![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/andrewusher/casual-cognitions)](https://img.shields.io/snyk/vulnerabilities/github/andrewusher/casual-cognitions)
 ![GitHub repo size](https://img.shields.io/github/repo-size/andrewusher/casual-cognitions)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/andrewusher/casual-cognitions)
-
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/andrewusher/casual-cognitions)
 
