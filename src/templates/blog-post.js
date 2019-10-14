@@ -17,6 +17,10 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet>
           <title>{post.frontmatter.title} | Casual Cognitions</title>
+          <meta
+            name="title"
+            content={`${post.frontmatter.title} | ${siteTitle}`}
+          />
           <meta name="description" content={post.excerpt} />
         </Helmet>
         <h1>{post.frontmatter.title}</h1>
