@@ -17,6 +17,7 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet>
           <title>{post.frontmatter.title} | Casual Cognitions</title>
+          <meta name="description" content={post.excerpt} />
         </Helmet>
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -82,6 +83,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
       }
       body
+      excerpt(pruneLength: 100)
     }
   }
 `
