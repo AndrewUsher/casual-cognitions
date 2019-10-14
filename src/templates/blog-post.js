@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import { TransitionLink } from '../components/TransitionLink'
@@ -14,6 +15,9 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <Helmet>
+          <title>{post.frontmatter.title} | Casual Cognitions</title>
+        </Helmet>
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
