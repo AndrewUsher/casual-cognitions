@@ -26,12 +26,19 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4)
                 }}
               >
-                <TransitionLink style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <TransitionLink
+                  style={{ boxShadow: 'none' }}
+                  to={node.fields.slug}
+                >
                   {title}
                 </TransitionLink>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <p
+                dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                style={{ marginBottom: rhythm(1 / 4) }}
+              />
+              <TransitionLink to={node.fields.slug}>Read More</TransitionLink>
             </div>
           )
         })}
