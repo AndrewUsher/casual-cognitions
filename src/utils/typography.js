@@ -1,5 +1,7 @@
 import Typography from 'typography'
 import ElkGen from 'typography-theme-elk-glen'
+import 'typeface-oswald'
+import 'typeface-pt-sans'
 
 ElkGen.overrideThemeStyles = () => ({
   'a.gatsby-resp-image-link': {
@@ -15,6 +17,7 @@ ElkGen.overrideThemeStyles = () => ({
 })
 
 const typography = new Typography(ElkGen)
+delete typography.googleFonts
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {

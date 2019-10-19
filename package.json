@@ -38,6 +38,8 @@
     "react-live": "^2.2.1",
     "react-typography": "^0.16.19",
     "styled-components": "^4.3.2",
+    "typeface-oswald": "^0.0.75",
+    "typeface-pt-sans": "^0.0.72",
     "typography": "^0.16.19",
     "typography-theme-anonymous": "^0.15.10",
     "typography-theme-elk-glen": "^0.16.19"
