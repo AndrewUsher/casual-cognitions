@@ -5,4 +5,9 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/andrewusher/casual-cognitions)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/andrewusher/casual-cognitions)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/andrewusher/casual-cognitions)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAndrewUsher%2Fcasual-cognitions.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FAndrewUsher%2Fcasual-cognitions?ref=badge_shield)
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAndrewUsher%2Fcasual-cognitions.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FAndrewUsher%2Fcasual-cognitions?ref=badge_large)
