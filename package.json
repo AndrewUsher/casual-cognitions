@@ -72,7 +72,7 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "clean": "rm -rf public",
     "deploy": "gh-pages -d public",
-    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 gatsby develop --https",
+    "dev": " gatsby develop",
     "build": "gatsby build"
   }
 }
