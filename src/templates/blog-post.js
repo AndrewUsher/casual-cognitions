@@ -1,4 +1,5 @@
 import React from 'react'
+import { DiscussionEmbed } from 'disqus-react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Helmet from 'react-helmet'
@@ -7,11 +8,26 @@ import Layout from '../components/Layout'
 import { TransitionLink } from '../components/TransitionLink'
 import { rhythm, scale } from '../utils/typography'
 
+const Seperator = () => (
+  <hr
+    style={{
+      marginBottom: rhythm(1)
+    }}
+  />
+)
+
 class BlogPostTemplate extends React.Component {
   render () {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const disqusConfig = {
+      shortname: process.env.GATSBY_DISQUS_NAME,
+      config: {
+        identifier: this.props.location.pathname,
+        title: post.frontmatter.title
+      }
+    }
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -35,11 +51,9 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <MDXRenderer>{post.body}</MDXRenderer>
-        <hr
-          style={{
-            marginBottom: rhythm(1)
-          }}
-        />
+        <Seperator />
+        <DiscussionEmbed {...disqusConfig} />
+        <Seperator />
         <Bio />
 
         <ul
