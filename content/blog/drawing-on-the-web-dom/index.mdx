@@ -1,0 +1,55 @@
+---
+title: 'Drawing on The Web with The DOM'
+date: '2018-10-29'
+---
+
+## Pros
+
+- easy to get started, since you’re working directly with the HTML elements you already have
+- excellent for text and element transitions on text-based pages
+- no need to add any external libraries or elements
+
+## Cons
+
+- not suitable for graphics-intensive applications or games
+- performance issues when animating multiple elements or increasing refresh rate
+
+The easiest way to draw things on a webpage is by manipulating DOM (Document Object Model) elements with CSS and JavaScript. (As a quick reminder, you can think of the DOM as anything that’s an HTML tag). This is a great option if you’re looking to animate small amounts of text or build in cool page transitions, where elements fly in and out a la PowerPoint.
+
+As you might know, there are multiple ways to position an element on the screen using CSS: by giving your element a margin, padding, or applying a transformation, you can place it anywhere you need to. Native CSS transitions and JavaScript both allow you to change CSS properties in response to events. Let’s review these:
+
+## Transitions
+
+CSS has a property called [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition), which allows you to move between its current state and the state defined by the CSS rule. For example, if your website offers a dark mode, you might define a .dark-mode class that sets a dark background and a light text color. When a user clicks the dark mode toggle, you can append this class to all the relevant elements (or a container) to trigger the switch to this color scheme. Rather than instantly switching the colors, you can transition to them by defining the new rules and adding a transition property on the CSS rule:
+
+```css
+.dark-mode {
+  color: #f2f2f2;
+  background-color: #202021;
+  transition: color 0.5s, background-color 0.5s;
+}
+```
+
+The transition property takes another CSS property and a duration, and switches to that value over that duration. Although this example is fairly simple, its implications of this are powerful. You can transition most CSS elements. This means that by adding or removing a class with JavaScript, you can cause elements to shrink, grow, or move on-screen
+
+## Animations
+
+Although the phrase “web animation” might bring back memories of scrolling banners on 1990s websites, they can be useful for elements like loading spinners. In an animation, you define keyframes, where each frame represents the state of an element at a given time. For example, if you wanted a div to change colors from green to red to blue, your three states would set background-color to each of these. The animation property then allows you to set how to transition from one keyframe to another—how long it should take and how smooth the transition should be.
+
+## JavaScript
+
+Applying animations and transitions to classes is made all the more powerful when you couple them with JavaScript, which allows you to change the styling on DOM elements by adding or removing classes or by directly changing element styles. This is incredibly useful when you need to respond to events on the page.
+
+In the dark mode example above, we can create an event listener on the dark mode toggle, add a .dark-mode class to our page container, and watch CSS transitions take effect when the class is added. Similarly, you might show/hide a loading wheel with a keyframe animation in response to requesting/receiving data with JavaScript.
+
+In addition to animations and transitions, there are two other DOM-based ways to draw shapes:
+
+### Clip Paths
+
+CSS clip paths allow you to “clip” HTML elements, hiding parts of the element. This allows you to create interesting and inventive shapes, from playful curved divs to complex background elements.
+
+### SVG
+
+SVG, which stands for Scalable Vector Graphics, is a markup language for drawing shapes. Just like HTML defines paragraphs, images, divs, and other elements that help you lay out a web page, SVG defines graphics elements in an `svg` tag, and uses `g` tags to group elements and basic shape tags (like `rect` and `line`) to draw shapes. You can then select and style these with CSS or dedicated inline attributes.
+
+SVGs are vector graphics, which means they are defined by mathematical equations. This, in turn, means that SVGs scale really well—the browser simply recalculates how the shape should look, rather than stretching an image with a set dimension. SVGs are often used as an alternative to Canvas graphics for small animations, and as a basis for graphics and visualization libraries like D3.js. Because SVG elements are part of the DOM, they could be targeted by JavaScript and styled directly with CSS—unlike Canvas, which renders stateless pixels and needs additional code to handle user events. However, since traversing and manipulating the DOM tree is slower than pure JavaScript operations, SVG performance slows down as the number of elements grows.
