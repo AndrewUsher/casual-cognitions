@@ -69,7 +69,8 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "lint:ci": "eslint --ignore-pattern public .",
+    "lint": "yarn lint:ci --fix",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "clean": "rm -rf public",
     "deploy": "gh-pages -d public",
