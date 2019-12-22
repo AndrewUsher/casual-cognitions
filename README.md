@@ -5,4 +5,4 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/andrewusher/casual-cognitions)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/andrewusher/casual-cognitions)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/andrewusher/casual-cognitions)
-
+![Travis Build Status](https://travis-ci.com/AndrewUsher/casual-cognitions.svg?branch=master)
