@@ -1,15 +1,11 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: ['standard', 'plugin:react/recommended'],
+  extends: ['@drewster'],
   env: {
     browser: true,
-    es6: true,
-  },
-  plugins: ['react'],
-  globals: {
-    graphql: false,
+    es6: true
   },
   rules: {
-    'react/prop-types': 0,
-  },
+    'react/prop-types': 0
+  }
 }
