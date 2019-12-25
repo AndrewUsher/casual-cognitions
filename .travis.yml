@@ -1,8 +1,12 @@
 language: node_js
 node_js:
-  - 'node'
+  - "node"
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH="$HOME/.yarn/bin:$PATH"
-script:
-  - 'yarn lint:ci'
+jobs:
+  include:
+    - stage: build
+      script: yarn build
+    - stage: lint
+      script: yarn lint:ci
