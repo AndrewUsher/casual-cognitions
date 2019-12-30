@@ -14712,10 +14712,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-oswald@0.0.75:
-  version "0.0.75"
-  resolved "https://registry.yarnpkg.com/typeface-oswald/-/typeface-oswald-0.0.75.tgz#39c9b6d4a08e78bbec0460ee71269b5f3ff5f64b"
-  integrity sha512-nIwDgn0wDb2hawNsxa+ys+r+vaY6sroWZ5Q2DtjUILN/UaDi2XiY6T2zm6IDT3+yei79LhOh7oZe20VXC0wjrA==
+typeface-oswald@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/typeface-oswald/-/typeface-oswald-1.1.3.tgz#d5451806ad8cccfb9a1478fbf549db724a206509"
+  integrity sha512-Ts9toe+e9brShPAmND8Qx3mz5VqcAHez+cF44YpQkG9v78E6njLuIFwigMnzrk4eZXgqwDGL38qWaXd8WzyKUA==
 
 typeface-pt-sans@0.0.72:
   version "0.0.72"
