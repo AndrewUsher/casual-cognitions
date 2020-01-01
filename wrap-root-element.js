@@ -19,8 +19,10 @@ const components = {
   }
 }
 export const wrapRootElement = ({ element }) => (
-  <React.Fragment>
-    <GlobalStyles />
-    <MDXProvider components={components}>{element}</MDXProvider>
-  </React.Fragment>
+  <React.StrictMode>
+    <React.Fragment>
+      <GlobalStyles />
+      <MDXProvider components={components}>{element}</MDXProvider>
+    </React.Fragment>
+  </React.StrictMode>
 )
