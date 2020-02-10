@@ -6,6 +6,7 @@ module.exports = {
     es6: true
   },
   rules: {
-    'react/prop-types': 0
+    'react/prop-types': 0,
+    'react/display-name': 0
   }
 }

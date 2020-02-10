@@ -1,15 +1,34 @@
 import React from 'react'
+import loadable from '@loadable/component'
 import Highlight, { defaultProps } from 'prism-react-renderer'
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 
 export const Code = ({ codeString, language, ...props }) => {
   if (props['react-live']) {
+    const LoadedLiveProvider = loadable(async () => {
+      const { LiveProvider } = await import('react-live')
+      return props => <LiveProvider {...props} />
+    })
+
+    const LoadedLiveEditor = loadable(async () => {
+      const { LiveEditor } = await import('react-live')
+      return props => <LiveEditor {...props} />
+    })
+
+    const LoadedLiveError = loadable(async () => {
+      const { LiveError } = await import('react-live')
+      return props => <LiveError {...props} />
+    })
+
+    const LoadedLivePreview = loadable(async () => {
+      const { LivePreview } = await import('react-live')
+      return props => <LivePreview {...props} />
+    })
     return (
-      <LiveProvider code={codeString} noInline={true}>
-        <LiveEditor />
-        <LiveError />
-        <LivePreview />
-      </LiveProvider>
+      <LoadedLiveProvider code={codeString} noInline={true}>
+        <LoadedLiveEditor />
+        <LoadedLiveError />
+        <LoadedLivePreview />
+      </LoadedLiveProvider>
     )
   } else {
     return (

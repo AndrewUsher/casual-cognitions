@@ -72,6 +72,7 @@ module.exports = {
       }
     },
     'gatsby-plugin-styled-components'
+    // 'gatsby-plugin-webpack-bundle-analyser-v2'
   ]
 
 }
