@@ -2195,14 +2195,14 @@
   dependencies:
     core-js "^2.5.7"
 
-"@loadable/babel-plugin@^5.12.0":
+"@loadable/babel-plugin@5.12.0":
   version "5.12.0"
   resolved "https://registry.yarnpkg.com/@loadable/babel-plugin/-/babel-plugin-5.12.0.tgz#de18d4637eb8f4bdecd694a6737880b3e2094d4c"
   integrity sha512-hb4TDUalaGogsCASEi0fD9Jn0Y2nQybupGgJQAxmx2KrLKxRoWfg78bJMabvownonsq3MEWgUWqb0c3m0uX9vQ==
   dependencies:
     "@babel/plugin-syntax-dynamic-import" "^7.7.4"
 
-"@loadable/component@^5.12.0":
+"@loadable/component@5.12.0":
   version "5.12.0"
   resolved "https://registry.yarnpkg.com/@loadable/component/-/component-5.12.0.tgz#34d056d15f53dc08d04e9203cad6867cf4f7306c"
   integrity sha512-eDG7FPZ8tCFA/mqu2IrYV6eS+UxGBo21PwtEV9QpkpYrx25xKRXzJUm36yfQPK3o7jXu43xpPkwiU4mLWcjJlw==
@@ -2210,7 +2210,7 @@
     "@babel/runtime" "^7.7.7"
     hoist-non-react-statics "^3.3.1"
 
-"@loadable/webpack-plugin@^5.12.0":
+"@loadable/webpack-plugin@5.12.0":
   version "5.12.0"
   resolved "https://registry.yarnpkg.com/@loadable/webpack-plugin/-/webpack-plugin-5.12.0.tgz#b28c6e7a979e9c2f8d8b743a634de0ede124c76f"
   integrity sha512-9G/DOSvR0BZHF8DCd7jWTVEjfLnyLKB+S5KhBOSCK8pTMwDcTKeb0oVd4iwPyeAfPAN4ibqN90r9qnSKnJ+WEQ==
@@ -3312,7 +3312,7 @@ babel-preset-gatsby-package@^0.1.2:
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
 
-babel-preset-gatsby@^0.2.29:
+babel-preset-gatsby@0.2.29, babel-preset-gatsby@^0.2.29:
   version "0.2.29"
   resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.29.tgz#cf50a2ec0e6d44fd715b559bfd5481c4221cab5c"
   integrity sha512-asJV/UMq7riYiY4ZhMi83Mbhwwtkvhp9gmmJgJJSJyAWw/tTgAmYan6Udpco3P4Kvd91lj+f8kzXJHT0G2sdwQ==
@@ -7266,7 +7266,7 @@ gatsby-plugin-typography@2.3.22:
   dependencies:
     "@babel/runtime" "^7.7.6"
 
-gatsby-plugin-webpack-bundle-analyser-v2@^1.1.8:
+gatsby-plugin-webpack-bundle-analyser-v2@1.1.8:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-webpack-bundle-analyser-v2/-/gatsby-plugin-webpack-bundle-analyser-v2-1.1.8.tgz#2fd3e44c71b0fa74b6cf574f447e699a8e187e0a"
   integrity sha512-xVC6JYP1n1CaLml9VTBqdrmBEkCUgcAk5jW8hpJVH9gAn3dVQYyOgUxAavi88ZBLN7Ff6M7uZ80COMRWtdlpbA==
