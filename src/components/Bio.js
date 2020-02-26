@@ -8,6 +8,10 @@ import { rhythm } from '../utils/typography'
 const Container = styled.div`
   display: flex;
   margin-bottom: ${rhythm(1.5)};
+
+  @media screen and (max-width: 719px) {
+    display: none;
+  }
 `
 
 const BioImage = styled(Image)`
