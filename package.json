@@ -72,7 +72,7 @@
     "lint": "yarn lint:ci --fix",
     "clean": "rm -rf public",
     "deploy": "gh-pages -d public",
-    "dev": " gatsby develop",
+    "dev": " gatsby develop --https",
     "build": "gatsby build",
     "serve": "gatsby serve"
   }
