@@ -6,6 +6,7 @@ module.exports = {
       twitter: 'andrewusher17'
     }
   },
+  polyfill: false,
   plugins: [
     'gatsby-plugin-transition-link',
     {
