@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import { rhythm, scale } from '../utils/typography'
-import { TransitionLink } from './TransitionLink'
 
 class Layout extends React.Component {
   render () {
@@ -19,7 +19,7 @@ class Layout extends React.Component {
             marginTop: 0
           }}
         >
-          <TransitionLink
+          <Link
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
@@ -28,7 +28,7 @@ class Layout extends React.Component {
             to={'/'}
           >
             {title}
-          </TransitionLink>
+          </Link>
         </h1>
       )
     } else {
@@ -40,7 +40,7 @@ class Layout extends React.Component {
             marginBottom: rhythm(-1)
           }}
         >
-          <TransitionLink
+          <Link
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
@@ -49,7 +49,7 @@ class Layout extends React.Component {
             to={'/'}
           >
             {title}
-          </TransitionLink>
+          </Link>
         </h3>
       )
     }

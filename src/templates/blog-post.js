@@ -1,11 +1,10 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import { Comments } from '../components/Comments'
 import Layout from '../components/Layout'
-import { TransitionLink } from '../components/TransitionLink'
 import { rhythm, scale } from '../utils/typography'
 
 const Seperator = () => (
@@ -63,16 +62,16 @@ class BlogPostTemplate extends React.Component {
         >
           <li>
             {previous && (
-              <TransitionLink to={previous.fields.slug} rel="prev">
+              <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
-              </TransitionLink>
+              </Link>
             )}
           </li>
           <li>
             {next && (
-              <TransitionLink to={next.fields.slug} rel="next">
+              <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
-              </TransitionLink>
+              </Link>
             )}
           </li>
         </ul>
