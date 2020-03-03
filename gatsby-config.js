@@ -72,8 +72,8 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography'
       }
     },
-    'gatsby-plugin-styled-components',
-    'gatsby-plugin-webpack-bundle-analyser-v2'
+    'gatsby-plugin-styled-components'
+    // 'gatsby-plugin-webpack-bundle-analyser-v2'
   ]
 
 }
