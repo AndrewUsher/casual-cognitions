@@ -4,7 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import { Comments } from '../components/Comments'
-import Layout from '../components/Layout'
+import { Layout } from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
 
 const Seperator = () => (

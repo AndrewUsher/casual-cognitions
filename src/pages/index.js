@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import Bio from '../components/Bio'
-import Layout from '../components/Layout'
+import { Layout } from '../components/Layout'
 import { rhythm } from '../utils/typography'
 
 const SearchInput = styled.input`
