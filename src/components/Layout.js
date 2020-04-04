@@ -7,7 +7,7 @@ import { rhythm, scale } from '../utils/typography'
 const Layout = ({ children, location, title }) => {
   let header
 
-  if (location.pathname === '/') {
+  if (location.pathname === '/' || location.pathname === '/archive') {
     header = (
       <h1
         style={{
@@ -53,7 +53,7 @@ const Layout = ({ children, location, title }) => {
   return (
     <Fragment>
       <Helmet htmlAttributes={{ lang: 'en' }} title="Casual Cognitions" />
-      <div
+      <main
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',
@@ -64,7 +64,7 @@ const Layout = ({ children, location, title }) => {
         {header}
         {children}
 
-      </div>
+      </main>
     </Fragment>
   )
 }
