@@ -8,12 +8,13 @@ import { rhythm } from '../utils/typography'
 const SearchInput = styled.input`
   border: none;
   border-bottom: 1px solid #000;
-  padding-bottom: 4px;
+  padding: 4px;
   width: 100%;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.9);
     font-family: 'PT Sans', sans-serif;
+    padding-left: 8px;
   }
 
   &:focus {
