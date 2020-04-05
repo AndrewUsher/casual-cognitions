@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import { preToCodeBlock } from 'mdx-utils'
 import styled, { ThemeProvider } from 'styled-components'
@@ -38,10 +38,19 @@ const AppWrapper = ({ element }) => {
   const [theme, setTheme] = useState('light')
   const buttonIcon = theme === 'light' ? '🌑' : '☀️'
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme) {
+      setTheme(savedTheme)
+    }
+  }, [])
+
   const toggleTheme = () => {
     if (theme === 'light') {
+      localStorage.setItem('theme', 'dark')
       setTheme('dark')
     } else {
+      localStorage.setItem('theme', 'light')
       setTheme('light')
     }
   }
