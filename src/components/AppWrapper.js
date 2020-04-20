@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import { preToCodeBlock } from 'mdx-utils'
 import styled, { ThemeProvider } from 'styled-components'
@@ -38,7 +38,7 @@ const AppWrapper = ({ element }) => {
   const [theme, setTheme] = useState('light')
   const buttonIcon = theme === 'light' ? '🌑' : '☀️'
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const savedTheme = localStorage.getItem('theme')
     if (savedTheme) {
       setTheme(savedTheme)
