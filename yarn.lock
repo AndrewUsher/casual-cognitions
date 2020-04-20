@@ -15228,11 +15228,6 @@ typeface-pt-sans@0.0.72:
   resolved "https://registry.yarnpkg.com/typeface-pt-sans/-/typeface-pt-sans-0.0.72.tgz#c47d198510b2ed1272ad6329cf1ae5f782ebf4cf"
   integrity sha512-eDMv72dE+0dwjIDltzZAUusF+cDgOfZKazHZK08uKCOG/BEzY6oc/WqtQLN71j5/voTXFi5M4+nXNbZnCayDMQ==
 
-typography-breakpoint-constants@^0.15.10:
-  version "0.15.10"
-  resolved "https://registry.yarnpkg.com/typography-breakpoint-constants/-/typography-breakpoint-constants-0.15.10.tgz#bd5308dd57250e7f28a8c6e1c0e668ddf1178c5c"
-  integrity sha1-vVMI3VclDn8oqMbhwOZo3fEXjFw=
-
 typography-breakpoint-constants@^0.16.19:
   version "0.16.19"
   resolved "https://registry.yarnpkg.com/typography-breakpoint-constants/-/typography-breakpoint-constants-0.16.19.tgz#e0e89147749562cbb46ce76c47ff0f73372765e7"
@@ -15242,14 +15237,6 @@ typography-normalize@^0.16.19:
   version "0.16.19"
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.16.19.tgz#58e0cf12466870c5b27006daa051fe7307780660"
   integrity sha512-vtnSv/uGBZVbd4e/ZhZB9HKBgKKlWQUXw74+ADIHHxzKp27CEf8PSR8TX1zF2qSyQ9/qMdqLwXYz8yRQFq9JLQ==
-
-typography-theme-anonymous@0.15.10:
-  version "0.15.10"
-  resolved "https://registry.yarnpkg.com/typography-theme-anonymous/-/typography-theme-anonymous-0.15.10.tgz#eb30f9359010d40e9430808af2347bc45c71577a"
-  integrity sha1-6zD5NZAQ1A6UMICK8jR7xFxxV3o=
-  dependencies:
-    gray-percentage "^2.0.0"
-    typography-breakpoint-constants "^0.15.10"
 
 typography-theme-elk-glen@0.16.19:
   version "0.16.19"

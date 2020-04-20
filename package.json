@@ -46,7 +46,6 @@
     "typeface-oswald": "1.1.4",
     "typeface-pt-sans": "0.0.72",
     "typography": "0.16.19",
-    "typography-theme-anonymous": "0.15.10",
     "typography-theme-elk-glen": "0.16.19"
   },
   "devDependencies": {
