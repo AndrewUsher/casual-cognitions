@@ -8,7 +8,6 @@ module.exports = {
   },
   polyfill: false,
   plugins: [
-    'gatsby-plugin-preact',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
