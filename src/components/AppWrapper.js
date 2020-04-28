@@ -1,9 +1,10 @@
 import React, { useLayoutEffect, useState } from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import { preToCodeBlock } from 'mdx-utils'
-import styled, { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
 import { Code } from './code'
 import { GlobalStyles } from './GlobalStyles'
+import { ToggleButton } from './ToggleButton'
 
 // components is its own object outside of render so that the references to
 // components are stable
@@ -17,22 +18,6 @@ const components = {
     }
   }
 }
-
-const toggleBackgroundColor = {
-  dark: '#88e1f2',
-  light: '#f78259'
-}
-
-const ToggleButton = styled.button`
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  padding: 12px;
-  border-radius: 50%;
-  border: none;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  background-color: ${props => toggleBackgroundColor[props.theme.currentTheme]};
-`
 
 const AppWrapper = ({ element }) => {
   const [theme, setTheme] = useState('light')
