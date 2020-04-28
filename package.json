@@ -52,6 +52,7 @@
     "babel-plugin-styled-components": "1.10.7",
     "eslint": "6.8.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.9",
+    "generate-changelog": "^1.8.0",
     "gh-pages": "2.2.0"
   },
   "homepage": "https://github.com/AndrewUsher/casual-cognitions#readme",
@@ -71,6 +72,9 @@
     "deploy": "gh-pages -d public",
     "dev": " gatsby develop --https",
     "build": "gatsby build",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags",
     "serve": "gatsby serve"
   }
 }
