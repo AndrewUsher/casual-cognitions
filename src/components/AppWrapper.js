@@ -56,7 +56,10 @@ const AppWrapper = ({ element }) => {
   }
 
   const styledTheme = {
-    currentTheme: theme
+    currentTheme: theme,
+    utils: {
+      setTheme: toggleTheme
+    }
   }
 
   return (
