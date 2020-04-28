@@ -3,7 +3,6 @@ import { LiveEditor, LiveError, LivePreview, LiveProvider } from 'react-live'
 import Highlight, { defaultProps } from 'prism-react-renderer'
 
 export const Code = ({ codeString, language, ...props }) => {
-  console.log(props, language)
   if (props['react-live']) {
     return (
       <LiveProvider code={codeString} noInline={true}>
