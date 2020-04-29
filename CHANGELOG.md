@@ -1,3 +1,9 @@
+### 1.2.0 (2020-04-29)
+
+##### Chores
+
+*  remove gatsby netlify plugin ([ed939c9a](https://github.com/AndrewUsher/casual-cognitions/commit/ed939c9ac76265e8d52cfb33488df62ca9ecdc54))
+
 ### 1.1.0 (2020-04-29)
 
 ##### Chores
