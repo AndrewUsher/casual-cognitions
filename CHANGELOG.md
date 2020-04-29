@@ -1,3 +1,18 @@
+### 1.1.0 (2020-04-29)
+
+##### Chores
+
+* **deps:**  pin dependency generate-changelog to 1.8.0 ([b7e60c45](https://github.com/AndrewUsher/casual-cognitions/commit/b7e60c45d2e31c6c0a24b2f4e0db00f0a4943877))
+
+##### New Features
+
+*  Add about me page ([b46ddf94](https://github.com/AndrewUsher/casual-cognitions/commit/b46ddf943bad6cbb52aad07251a1ce065451ccb3))
+
+##### Refactors
+
+* **ToggleButton:**  move to seperate component ([2d786fa3](https://github.com/AndrewUsher/casual-cognitions/commit/2d786fa3d952f899b2e712d71e1de8328ddfd20a))
+* **Theme:**  move theme toggled to styled-components provider ([6cb69e7c](https://github.com/AndrewUsher/casual-cognitions/commit/6cb69e7c2db437cc6c5e64a9acf6a0c79915ea0b))
+
 #### 1.0.2 (2020-04-28)
 
 ##### Build System / Dependencies
