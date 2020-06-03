@@ -1,6 +1,5 @@
 {
   "extends": [
-    "config:base"
-  ],
-  "masterIssue": true
+    "github>andrewusher/renovate-config"
+  ]
 }
