@@ -48,7 +48,7 @@
     "babel-eslint": "10.1.0",
     "babel-plugin-styled-components": "1.10.7",
     "eslint": "7.1.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.9",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.10",
     "generate-changelog": "1.8.0"
   },
   "homepage": "https://github.com/AndrewUsher/casual-cognitions#readme",
