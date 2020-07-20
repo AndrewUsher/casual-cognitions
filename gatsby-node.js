@@ -1,5 +1,4 @@
 const path = require('path')
-const LoadablePlugin = require('@loadable/webpack-plugin')
 const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.createPages = ({ graphql, actions }) => {
@@ -10,6 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
     `
       {
         allMdx(
+          filter: { fileAbsolutePath: { regex: "/blog/" } }
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
@@ -41,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
       const next = index === 0 ? null : posts[index - 1].node
 
       createPage({
-        path: `/post${post.node.fields.slug}`,
+        path: `/blog${post.node.fields.slug}`,
         component: blogPost,
         context: {
           slug: post.node.fields.slug,
@@ -64,10 +64,4 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value
     })
   }
-}
-
-exports.onCreateWebpackConfig = ({ stage, getConfig, rules, loaders, plugins, actions }) => {
-  actions.setWebpackConfig({
-    plugins: [new LoadablePlugin()]
-  })
 }

@@ -7,7 +7,7 @@ import { rhythm, scale } from '../utils/typography'
 const Layout = ({ children, location, title }) => {
   let header
 
-  if (location.pathname === '/' || location.pathname === '/archive') {
+  if (location.pathname === '/' || location.pathname === '/archive' || location.pathname === '/blog') {
     header = (
       <h1
         style={{
@@ -22,7 +22,7 @@ const Layout = ({ children, location, title }) => {
             textDecoration: 'none',
             color: 'inherit'
           }}
-          to={'/'}
+          to="/blog"
         >
           {title}
         </Link>
