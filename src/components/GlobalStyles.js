@@ -63,13 +63,6 @@ const GlobalStyles = createGlobalStyle`
     color: ${getColor(colors.small)};
   }
 
-  a {
-    color: ${getColor(colors.a)};
-    text-shadow: none;
-    background-image: linear-gradient(to top, #0000, #0000 1px, ${getColor(colors.a)} 1px, ${getColor(colors.a)} 2px, #0000 2px);
-  }
-
-
   }
 
   span.gatsby-resp-image-background-image {

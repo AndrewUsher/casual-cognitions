@@ -3,7 +3,6 @@ import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import { Bio } from '../components/Bio'
 import { Layout } from '../components/Layout'
-import { rhythm } from '../utils/typography'
 
 const SearchInput = styled.input`
   border: none;
@@ -42,11 +41,7 @@ const BlogIndex = props => {
         if (!postPublished) return null
         return (
           <div key={node.fields.slug}>
-            <h3
-              style={{
-                marginBottom: rhythm(1 / 4)
-              }}
-            >
+            <h3>
               <Link
                 style={{ boxShadow: 'none' }}
                 to={`/post/${node.fields.slug}`}
@@ -57,7 +52,6 @@ const BlogIndex = props => {
             <small>{node.frontmatter.date}</small>
             <p
               dangerouslySetInnerHTML={{ __html: node.excerpt }}
-              style={{ marginBottom: rhythm(1 / 4) }}
             />
             <Link to={`/blog${node.fields.slug}`}>Read More</Link>
           </div>
