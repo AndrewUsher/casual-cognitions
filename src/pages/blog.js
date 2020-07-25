@@ -1,25 +1,18 @@
+/** @jsx jsx */
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import styled from 'styled-components'
+import { Box, Heading, Input, jsx, Text } from 'theme-ui'
 import { Bio } from '../components/Bio'
 import { Layout } from '../components/Layout'
 
-const SearchInput = styled.input`
-  border: none;
-  border-bottom: 1px solid #000;
-  padding: 4px;
-  width: 100%;
-
-  &::placeholder {
-    color: rgba(0, 0, 0, 0.9);
-    font-family: 'PT Sans', sans-serif;
-    padding-left: 8px;
+const inputStyles = {
+  border: 'none',
+  borderBottom: '1px solid #000',
+  px: 0,
+  '&:focus': {
+    outline: 'none'
   }
-
-  &:focus {
-    outline: none;
-  }
-`
+}
 
 const BlogIndex = props => {
   const [search, setSearch] = React.useState('')
@@ -34,27 +27,43 @@ const BlogIndex = props => {
   return (
     <Layout location={props.location} title={siteTitle}>
       <Bio />
-      <SearchInput type="text" onChange={handleChange} placeholder="Search for a post" />
+      <Input
+        id="search-posts"
+        type="text"
+        onChange={handleChange}
+        placeholder="Search for a post"
+        sx={inputStyles}
+      />
       {posts.filter(({ node }) => node.frontmatter.title.toLowerCase().includes(search)).map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         const postPublished = node.frontmatter.published !== 'false'
         if (!postPublished) return null
         return (
-          <div key={node.fields.slug}>
-            <h3>
+          <Box key={node.fields.slug} my={30}>
+            <Heading as="h3">
               <Link
-                style={{ boxShadow: 'none' }}
-                to={`/post/${node.fields.slug}`}
+                sx={{
+                  color: 'inherit',
+                  textDecoration: 'none'
+                }}
+                to={`/blog${node.fields.slug}`}
               >
                 {title}
               </Link>
-            </h3>
+            </Heading>
             <small>{node.frontmatter.date}</small>
-            <p
+            <Text
               dangerouslySetInnerHTML={{ __html: node.excerpt }}
             />
-            <Link to={node.fields.slug}>Read More</Link>
-          </div>
+            <Link
+              sx={{
+                color: 'inherit'
+              }}
+              to={node.fields.slug}
+            >
+              Read More
+            </Link>
+          </Box>
         )
       })}
     </Layout>
