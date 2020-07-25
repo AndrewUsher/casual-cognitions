@@ -8,6 +8,7 @@ module.exports = {
   },
   polyfill: false,
   plugins: [
+    'gatsby-plugin-theme-ui',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
