@@ -3,11 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import styled from 'styled-components'
 
-import { rhythm } from '../utils/typography'
-
 const Container = styled.div`
   display: flex;
-  margin-bottom: ${rhythm(1.5)};
 
   @media screen and (max-width: 719px) {
     display: none;
@@ -15,7 +12,6 @@ const Container = styled.div`
 `
 
 const BioImage = styled(Image)`
-  margin-right: ${rhythm(1 / 2)};
   margin-bottom: 0;
   min-width: 60px;
   border-radius: 100%;

@@ -5,14 +5,9 @@ import { Helmet } from 'react-helmet'
 import { Bio } from '../components/Bio'
 import { Comments } from '../components/Comments'
 import { Layout } from '../components/Layout'
-import { rhythm, scale } from '../utils/typography'
 
 const Seperator = () => (
-  <hr
-    style={{
-      marginBottom: rhythm(1)
-    }}
-  />
+  <hr />
 )
 
 class BlogPostTemplate extends React.Component {
@@ -34,10 +29,7 @@ class BlogPostTemplate extends React.Component {
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1)
+            display: 'block'
           }}
         >
           {post.frontmatter.date}
