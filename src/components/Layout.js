@@ -6,7 +6,7 @@ import { Box, Heading } from 'theme-ui'
 const Layout = ({ children, location, title }) => {
   let header
 
-  if (location.pathname === '/' || location.pathname === '/archive' || location.pathname === '/blog') {
+  if (location.pathname === '/' || location.pathname === '/archive' || location.pathname.match(/^\/blog\/?$/)) {
     header = (
       <Heading
         as="h1"
