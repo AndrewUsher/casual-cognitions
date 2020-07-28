@@ -5,5 +5,10 @@ export default {
   },
   sizes: {
     container: 768
+  },
+  styles: {
+    a: {
+      color: 'inherit'
+    }
   }
 }
