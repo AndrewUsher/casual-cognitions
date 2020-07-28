@@ -59,7 +59,7 @@ const BlogIndex = props => {
               sx={{
                 color: 'inherit'
               }}
-              to={node.fields.slug}
+              to={`/blog${node.fields.slug}`}
             >
               Read More
             </Link>
