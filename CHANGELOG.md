@@ -1,3 +1,11 @@
+#### 1.4.1 (2020-07-29)
+
+##### Bug Fixes
+
+* **blog:**
+  *  use correct header on post pages ([1f57d23b](https://github.com/AndrewUsher/casual-cognitions/commit/1f57d23b5f746196e250819cfd37987f153e018e))
+  *  update read more link ([1f8cbcd2](https://github.com/AndrewUsher/casual-cognitions/commit/1f8cbcd2eef53104fb591550b36862a1afdc9ba5))
+
 ### 1.4.0 (2020-07-29)
 
 ##### Chores

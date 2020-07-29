@@ -59,7 +59,7 @@ const BlogIndex = props => {
               dangerouslySetInnerHTML={{ __html: node.excerpt }}
               style={{ marginBottom: rhythm(1 / 4) }}
             />
-            <Link to={node.fields.slug}>Read More</Link>
+            <Link to={`/blog${node.fields.slug}`}>Read More</Link>
           </div>
         )
       })}
