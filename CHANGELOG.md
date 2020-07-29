@@ -1,3 +1,66 @@
+### 1.4.0 (2020-07-29)
+
+##### Chores
+
+*  run ci on node 12 only ([a378d4a6](https://github.com/AndrewUsher/casual-cognitions/commit/a378d4a6be839f14f6ec84be810099e261b59802))
+*  make github actions run only on push ([47da83a9](https://github.com/AndrewUsher/casual-cognitions/commit/47da83a93e84104ce351972ee329be6b7dc9e129))
+*  remove travis config ([4f743895](https://github.com/AndrewUsher/casual-cognitions/commit/4f743895af187bedf16bfea8c6e968808d5e7780))
+*  remove gh-pages ([5d25c065](https://github.com/AndrewUsher/casual-cognitions/commit/5d25c065001a5ea70678d24e7d11ebbc83abd577))
+*  switch to common renovate config ([637ed810](https://github.com/AndrewUsher/casual-cognitions/commit/637ed810b2cf6f40b0982321a353a831a1ad930e))
+*  update package details ([729731ae](https://github.com/AndrewUsher/casual-cognitions/commit/729731ae8d51ba9e23fc2d98059585dd902b3e38))
+* **deps:**
+  *  update dependency eslint to v7.4.0 ([d76771b7](https://github.com/AndrewUsher/casual-cognitions/commit/d76771b7250aa2ecabde02b6d46e4d51ba53009b))
+  *  update dependency gatsby-plugin-webpack-bundle-analyser-v2 to v1.1.10 ([27fee9a4](https://github.com/AndrewUsher/casual-cognitions/commit/27fee9a4b2ad50a1703591b69a5d4e5e0ca6ffc3))
+  *  update dependency gatsby-plugin-webpack-bundle-analyser-v2 to v1.1.9 ([bd66e042](https://github.com/AndrewUsher/casual-cognitions/commit/bd66e042ebbfefa43192282e555e5b63ea8fa8b4))
+
+##### New Features
+
+*  add build action ([63a8e111](https://github.com/AndrewUsher/casual-cognitions/commit/63a8e111d2f56c18a27380cea188c83b5ba6648b))
+*  add lint github action ([df5e9449](https://github.com/AndrewUsher/casual-cognitions/commit/df5e9449118469b4756faa923ca234828c510223))
+*  add changelog generator ([844079da](https://github.com/AndrewUsher/casual-cognitions/commit/844079daa0c8ff3fe8159a96f587cd2f04c67dca))
+
+##### Bug Fixes
+
+* **deps:**
+  *  update gatsby monorepo ([ec100edb](https://github.com/AndrewUsher/casual-cognitions/commit/ec100edb1e07b33dd9263abfac9aeb1a619dc710))
+  *  update dependency react-helmet to v6.1.0 ([cf353ae5](https://github.com/AndrewUsher/casual-cognitions/commit/cf353ae55dec0b66de1585db2091a9281d19a823))
+  *  update dependency disqus-react to v1.0.9 ([cf7990fe](https://github.com/AndrewUsher/casual-cognitions/commit/cf7990fef9c3500e2d98e55521a93fb03deeb145))
+  *  update mdx monorepo to v1.6.10 ([8aca9c2f](https://github.com/AndrewUsher/casual-cognitions/commit/8aca9c2f91f4ddd3d7838a3a615bb02eb3f6a965))
+  *  update dependency gatsby to v2.23.0 ([be8dadc1](https://github.com/AndrewUsher/casual-cognitions/commit/be8dadc1154b5cd3dd074862f12b968bf261287f))
+  *  update dependency gatsby to v2.22.20 ([2360822d](https://github.com/AndrewUsher/casual-cognitions/commit/2360822db30815ac359e3096baa6c525d8d400bb))
+  *  update gatsby monorepo ([82bd7606](https://github.com/AndrewUsher/casual-cognitions/commit/82bd7606a54d12d79a5b0946478834620079d94b))
+  *  update mdx monorepo to v1.6.5 ([9a3831b4](https://github.com/AndrewUsher/casual-cognitions/commit/9a3831b4c89a6afad0e753dae8bf4ead5a318fe6))
+  *  update dependency prism-react-renderer to v1.1.0 ([ca1c7aa3](https://github.com/AndrewUsher/casual-cognitions/commit/ca1c7aa3d6afc187d54ef223cc92189c5cfcb313))
+  *  update gatsby monorepo ([760ab928](https://github.com/AndrewUsher/casual-cognitions/commit/760ab928ca07a90d62363315bbd7b98d95f66129))
+  *  update mdx monorepo to v1.6.0 ([e5368f01](https://github.com/AndrewUsher/casual-cognitions/commit/e5368f01b28f15912ac3fe3a267e159fe8b41f19))
+
+##### Other Changes
+
+*  remove loadable-components" ([a1baf8da](https://github.com/AndrewUsher/casual-cognitions/commit/a1baf8da8b22974a40334482ab3105a0748cb1c2))
+*  move wrap-root-element to gatsby folder" ([4651682e](https://github.com/AndrewUsher/casual-cognitions/commit/4651682e9215156c2cb372f7460c85294f8b8208))
+*  switch to common renovate config" ([2d498f70](https://github.com/AndrewUsher/casual-cognitions/commit/2d498f7079b1fe8fc3627bdffa07f37c10d2cb00))
+*  remove gh-pages" ([fe4bc63e](https://github.com/AndrewUsher/casual-cognitions/commit/fe4bc63e77f0c6ed95d32057f107f7aa11e0d1db))
+* **deps:**
+  *  update mdx monorepo to v1.6.5" ([685ad32b](https://github.com/AndrewUsher/casual-cognitions/commit/685ad32bf67b3a0363b58919d286e063de841c13))
+  *  update gatsby monorepo" ([b9d0b621](https://github.com/AndrewUsher/casual-cognitions/commit/b9d0b621b2a18bc95a27bb0d37886ea67f9002d1))
+  *  update dependency gatsby-plugin-webpack-bundle-analyser-v2 to v1.1.10" ([a5771ffc](https://github.com/AndrewUsher/casual-cognitions/commit/a5771ffcf77f083896e04827a9a784931261c88a))
+  *  update dependency gatsby to v2.22.20" ([2ea47f7b](https://github.com/AndrewUsher/casual-cognitions/commit/2ea47f7b28b44046df18f61767943bb476874169))
+  *  update dependency gatsby to v2.23.0" ([457bda9a](https://github.com/AndrewUsher/casual-cognitions/commit/457bda9a06860401cb9c74a6e9dcc7e9b1a69186))
+  *  update mdx monorepo to v1.6.10" ([790dacda](https://github.com/AndrewUsher/casual-cognitions/commit/790dacdaf99ba0a9a3622e8138e206536ac07ce1))
+  *  update dependency disqus-react to v1.0.9" ([5fea7098](https://github.com/AndrewUsher/casual-cognitions/commit/5fea7098f64d5b4e7780ab12bf3e3afef2a0afd4))
+  *  update dependency react-helmet to v6.1.0" ([ff41545e](https://github.com/AndrewUsher/casual-cognitions/commit/ff41545e2cb9ff3a5ad8c85e006798bcbd50b70d))
+  *  update dependency eslint to v7.4.0" ([d55c7223](https://github.com/AndrewUsher/casual-cognitions/commit/d55c7223ee91d0cfc416a3c7409533a66d14b493))
+  *  update gatsby monorepo" ([cae09ba0](https://github.com/AndrewUsher/casual-cognitions/commit/cae09ba040e778451830950aebf180631e82ac68))
+* **blog:**  move blog from / to /blog" ([853b3164](https://github.com/AndrewUsher/casual-cognitions/commit/853b3164a5a0acb64333561b5a74c0837d615fea))
+* **posts:**  move posts from /post/ to /blog/" ([e652265f](https://github.com/AndrewUsher/casual-cognitions/commit/e652265f78e7fb4dc7d3785c1d9fa63fb76df697))
+
+##### Refactors
+
+* **posts:**  move posts from /post/ to /blog/ ([6453f111](https://github.com/AndrewUsher/casual-cognitions/commit/6453f111b6dcd7b464433006e67a375189815823))
+* **blog:**  move blog from / to /blog ([2dee2c9b](https://github.com/AndrewUsher/casual-cognitions/commit/2dee2c9bd8e0911cd3044ec365564c6007d2f733))
+*  move wrap-root-element to gatsby folder ([9340f9e6](https://github.com/AndrewUsher/casual-cognitions/commit/9340f9e67fc68b8ed0d34d593337b1e0b9c3a2ae))
+*  remove loadable-components ([d97be35b](https://github.com/AndrewUsher/casual-cognitions/commit/d97be35b54fda15d890b65a29fafd50bc83657e7))
+
 ### 1.3.0 (2020-07-20)
 
 ##### Chores
