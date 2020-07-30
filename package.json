@@ -21,7 +21,6 @@
     "gatsby-plugin-offline": "3.2.21",
     "gatsby-plugin-react-helmet": "3.3.10",
     "gatsby-plugin-sharp": "2.6.24",
-    "gatsby-plugin-styled-components": "3.3.10",
     "gatsby-plugin-theme-ui": "0.3.0",
     "gatsby-remark-copy-linked-files": "2.3.12",
     "gatsby-remark-images": "3.3.23",
@@ -36,7 +35,6 @@
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
     "react-live": "2.2.2",
-    "styled-components": "5.1.1",
     "theme-ui": "0.3.1",
     "typeface-oswald": "1.1.4",
     "typeface-pt-sans": "0.0.72"
@@ -44,7 +42,6 @@
   "devDependencies": {
     "@drewster/eslint-config": "1.0.2",
     "babel-eslint": "10.1.0",
-    "babel-plugin-styled-components": "1.10.7",
     "eslint": "7.5.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.10",
     "generate-changelog": "1.8.0"
