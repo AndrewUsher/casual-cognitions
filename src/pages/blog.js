@@ -40,7 +40,7 @@ const BlogIndex = props => {
         if (!postPublished) return null
         return (
           <Box key={node.fields.slug} my={30}>
-            <Heading as="h3">
+            <Heading as="h2">
               <Link
                 sx={{
                   color: 'inherit',
@@ -54,6 +54,9 @@ const BlogIndex = props => {
             <small>{node.frontmatter.date}</small>
             <Text
               dangerouslySetInnerHTML={{ __html: node.excerpt }}
+              sx={{
+                marginY: 2
+              }}
             />
             <Link
               sx={{
@@ -82,7 +85,7 @@ export const pageQuery = graphql`
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt(pruneLength: 200)
+          excerpt(pruneLength: 300)
           fields {
             slug
           }
