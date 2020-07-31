@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react'
+/* @jsx jsx */
+import { Fragment } from 'react'
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import { Box, Heading } from 'theme-ui'
+import { Box, Heading, jsx } from 'theme-ui'
 
 const Layout = ({ children, location, title }) => {
   let header
@@ -11,7 +12,7 @@ const Layout = ({ children, location, title }) => {
       <Heading
         as="h1"
         sx={{
-          marginTop: 0
+          marginY: 3
         }}
       >
         <Link
@@ -28,15 +29,14 @@ const Layout = ({ children, location, title }) => {
     )
   } else {
     header = (
-      <h3
-        style={{
-          fontFamily: 'Montserrat, sans-serif',
-          marginTop: 0
+      <Heading
+        as="h2"
+        sx={{
+          marginY: 3
         }}
       >
         <Link
-          style={{
-            boxShadow: 'none',
+          sx={{
             textDecoration: 'none',
             color: 'inherit'
           }}
@@ -44,7 +44,7 @@ const Layout = ({ children, location, title }) => {
         >
           {title}
         </Link>
-      </h3>
+      </Heading>
     )
   }
   return (
@@ -53,7 +53,8 @@ const Layout = ({ children, location, title }) => {
       <Box
         sx={{
           mx: 'auto',
-          maxWidth: 'container'
+          maxWidth: 'container',
+          paddingX: 3
         }}
       >
         {header}
