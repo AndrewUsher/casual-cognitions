@@ -1,19 +1,18 @@
-import React, { Fragment } from 'react'
+/* @jsx jsx */
+import { Fragment } from 'react'
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
-
-import { rhythm, scale } from '../utils/typography'
+import { Box, Heading, jsx } from 'theme-ui'
 
 const Layout = ({ children, location, title }) => {
   let header
 
   if (location.pathname === '/' || location.pathname === '/archive' || location.pathname.match(/^\/blog\/?$/)) {
     header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0
+      <Heading
+        as="h1"
+        sx={{
+          marginY: 3
         }}
       >
         <Link
@@ -26,20 +25,18 @@ const Layout = ({ children, location, title }) => {
         >
           {title}
         </Link>
-      </h1>
+      </Heading>
     )
   } else {
     header = (
-      <h3
-        style={{
-          fontFamily: 'Montserrat, sans-serif',
-          marginTop: 0,
-          marginBottom: rhythm(-1)
+      <Heading
+        as="h2"
+        sx={{
+          marginY: 3
         }}
       >
         <Link
-          style={{
-            boxShadow: 'none',
+          sx={{
             textDecoration: 'none',
             color: 'inherit'
           }}
@@ -47,24 +44,23 @@ const Layout = ({ children, location, title }) => {
         >
           {title}
         </Link>
-      </h3>
+      </Heading>
     )
   }
   return (
     <Fragment>
       <Helmet htmlAttributes={{ lang: 'en' }} title="Casual Cognitions" />
-      <main
-        style={{
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
+      <Box
+        sx={{
+          mx: 'auto',
+          maxWidth: 'container',
+          paddingX: 3
         }}
       >
         {header}
         {children}
 
-      </main>
+      </Box>
     </Fragment>
   )
 }

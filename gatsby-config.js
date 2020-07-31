@@ -8,6 +8,7 @@ module.exports = {
   },
   polyfill: false,
   plugins: [
+    'gatsby-plugin-theme-ui',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -71,14 +72,7 @@ module.exports = {
       }
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography'
-      }
-    },
-    'gatsby-plugin-styled-components'
+    'gatsby-plugin-react-helmet'
     // 'gatsby-plugin-webpack-bundle-analyser-v2'
   ]
 
