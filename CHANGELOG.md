@@ -1,3 +1,33 @@
+## 2.0.0 (2020-07-31)
+
+##### Chores
+
+*  remove theme toggle button ([33b109ad](https://github.com/AndrewUsher/casual-cognitions/commit/33b109ad5c9522a3ef6761a45dd96c07b7232df9))
+
+##### New Features
+
+*  add default container size ([c6391d94](https://github.com/AndrewUsher/casual-cognitions/commit/c6391d9492ecac4f50c888b1b6af7bbe28aee25f))
+*  add theme ui ([05997e14](https://github.com/AndrewUsher/casual-cognitions/commit/05997e14e449e13ad9df6c5065a2ff8006e54bed))
+
+##### Bug Fixes
+
+* **deps:**
+  *  update gatsby monorepo ([2c893ae2](https://github.com/AndrewUsher/casual-cognitions/commit/2c893ae27dc3d9853009018e2d806b458ca4d695))
+  *  pin dependencies ([7cbb6226](https://github.com/AndrewUsher/casual-cognitions/commit/7cbb6226320b3bfbb02e59eb520f046c8f08dc51))
+* **blog:**  make links inherit color ([d4fffbed](https://github.com/AndrewUsher/casual-cognitions/commit/d4fffbed3186957b76b4d94607ecc2d4fdc48ee4))
+
+##### Refactors
+
+* **blog:**
+  *  list changes ([b8bdc44f](https://github.com/AndrewUsher/casual-cognitions/commit/b8bdc44f4ee67c6bd0cda240d18a5f43260e110a))
+  *  remove global styles ([a28140ab](https://github.com/AndrewUsher/casual-cognitions/commit/a28140abe6a361ba8ba1362113afc91574f3ecbf))
+* **blog layout:**  migrate to theme-ui ([a7ccfc25](https://github.com/AndrewUsher/casual-cognitions/commit/a7ccfc25a53841c4b3e2ba26f7410867f2fc2cf9))
+*  finalize theme-ui theme ([ca1b87d2](https://github.com/AndrewUsher/casual-cognitions/commit/ca1b87d2bb3f4803ed8011d5c54c8cd6cf40db4d))
+*  remove styled-components ([1e09ad2a](https://github.com/AndrewUsher/casual-cognitions/commit/1e09ad2a09cd17b1bdbe01100e2a3c298854a05f))
+*  remove gatsby-plugin-typography ([aaf98dac](https://github.com/AndrewUsher/casual-cognitions/commit/aaf98dac3eb324b777d871f6ea66ce0e9bf29a14))
+* **blog bio:**  migrate to theme-ui ([40471a4a](https://github.com/AndrewUsher/casual-cognitions/commit/40471a4a6a3f077d7d143c264e5bddc540fb5b73))
+* **blog list:**  migrate to theme-ui ([a75a38c3](https://github.com/AndrewUsher/casual-cognitions/commit/a75a38c34d203b81c651157b68ab36e89ae97e30))
+
 #### 1.4.1 (2020-07-29)
 
 ##### Bug Fixes
