@@ -1,3 +1,9 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [2.1.1](https://github.com/AndrewUsher/casual-cognitions/compare/v2.1.0...v2.1.1) (2020-08-04)
+
 ### 2.1.0 (2020-08-04)
 
 ##### Chores
@@ -424,4 +430,3 @@
 * **TransitionLink:**  change color of paintDrip effect ([a83d59a6](https://github.com/AndrewUsher/casual-cognitions/commit/a83d59a611d3c93a3077f383599bd2c57dcf6224))
 * **code:**  resolve key eslint errors ([3481edb8](https://github.com/AndrewUsher/casual-cognitions/commit/3481edb8d5d4f641d13764e7561363ff48d2b4b7))
 * **manifest:**  Update manifest name and shortname ([b6005078](https://github.com/AndrewUsher/casual-cognitions/commit/b600507894c3541f59403b566f565d730a29e452))
-
