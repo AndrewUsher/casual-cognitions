@@ -36,8 +36,7 @@ const BlogIndex = props => {
       />
       {posts.filter(({ node }) => node.frontmatter.title.toLowerCase().includes(search)).map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
-        const postPublished = node.frontmatter.published !== 'false'
-        if (!postPublished) return null
+
         return (
           <Box key={node.fields.slug} my={30}>
             <Heading as="h2">
@@ -91,7 +90,6 @@ export const pageQuery = graphql`
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
-            published
             title
           }
         }
