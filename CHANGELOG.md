@@ -1,3 +1,17 @@
+### 2.1.0 (2020-08-04)
+
+##### Chores
+
+*  remove unfinished posts ([3b8743d5](https://github.com/AndrewUsher/casual-cognitions/commit/3b8743d59da17e23f859b6ce1c78cc66e9a52e9d))
+*  remove console statement ([0d5aab64](https://github.com/AndrewUsher/casual-cognitions/commit/0d5aab64adadc4a4e3ce0a46f23003dce76c03c6))
+*  add husky config ([70d4b32d](https://github.com/AndrewUsher/casual-cognitions/commit/70d4b32df9a14fccceabaa5849127e0d0db25d4e))
+
+##### Refactors
+
+* **blog:**  remove draft post functionality ([a691831d](https://github.com/AndrewUsher/casual-cognitions/commit/a691831d09361301a6ce9b2275c1810d53da3d08))
+* **blog layout:**  migrate to theme-ui ([dae372c9](https://github.com/AndrewUsher/casual-cognitions/commit/dae372c94d3257252f87f3cccd3c770802ca7700))
+* **bio:**  style to be raised card ([a71e48b4](https://github.com/AndrewUsher/casual-cognitions/commit/a71e48b484a44288853b8cf53e0b7886252a2914))
+
 ## 2.0.0 (2020-07-31)
 
 ##### Chores
