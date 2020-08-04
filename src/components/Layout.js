@@ -2,20 +2,20 @@
 import { Fragment } from 'react'
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import { Box, Heading, jsx } from 'theme-ui'
+import { Box, jsx, Styled } from 'theme-ui'
 
 const Layout = ({ children, location, title }) => {
   let header
 
   if (location.pathname === '/' || location.pathname === '/archive' || location.pathname.match(/^\/blog\/?$/)) {
     header = (
-      <Heading
-        as="h1"
+      <Styled.h1
         sx={{
           marginY: 3
         }}
       >
-        <Link
+        <Styled.a
+          as={Link}
           style={{
             boxShadow: 'none',
             textDecoration: 'none',
@@ -24,27 +24,28 @@ const Layout = ({ children, location, title }) => {
           to="/blog"
         >
           {title}
-        </Link>
-      </Heading>
+        </Styled.a>
+      </Styled.h1>
     )
   } else {
     header = (
-      <Heading
+      <Styled.h2
         as="h2"
         sx={{
           marginY: 3
         }}
       >
-        <Link
+        <Styled.a
+          as={Link}
           sx={{
             textDecoration: 'none',
             color: 'inherit'
           }}
-          to={'/'}
+          to={'/blog'}
         >
           {title}
-        </Link>
-      </Heading>
+        </Styled.a>
+      </Styled.h2>
     )
   }
   return (

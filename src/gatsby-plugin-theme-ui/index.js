@@ -1,4 +1,11 @@
 export default {
+  cards: {
+    primary: {
+      boxShadow: '0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)',
+      marginY: 4,
+      padding: 3
+    }
+  },
   space: [
     0,
     4,
@@ -67,7 +74,7 @@ export default {
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 5
+      fontSize: 6
     },
     h2: {
       color: 'text',

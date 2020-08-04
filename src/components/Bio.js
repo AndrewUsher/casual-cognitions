@@ -1,11 +1,12 @@
 /* @jsx jsx */
 import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
-import { Flex, jsx, Text } from 'theme-ui'
+import { Card, jsx, Text } from 'theme-ui'
 
 const styles = {
   bioContainer: {
-    alignItems: 'center'
+    alignItems: 'center',
+    display: 'flex'
   },
   bioImage: {
     marginRight: 3,
@@ -40,7 +41,7 @@ export const Bio = () => {
   const { author, social } = data.site.siteMetadata
 
   return (
-    <Flex sx={styles.bioContainer}>
+    <Card sx={styles.bioContainer}>
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
@@ -54,6 +55,6 @@ export const Bio = () => {
           You should follow him on Twitter
         </a>
       </Text>
-    </Flex>
+    </Card>
   )
 }

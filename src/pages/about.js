@@ -18,7 +18,6 @@ const query = graphql`
 const AboutPage = ({ location }) => {
   const data = useStaticQuery(query)
   const { body } = data.allMdx.edges[0].node
-  console.log(body)
   return (
     <Layout location={location} title="Andrew Usher">
       <MDXRenderer>{body}</MDXRenderer>
