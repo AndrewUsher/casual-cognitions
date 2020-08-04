@@ -35,9 +35,7 @@
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
     "react-live": "2.2.2",
-    "theme-ui": "0.3.1",
-    "typeface-oswald": "1.1.4",
-    "typeface-pt-sans": "0.0.72"
+    "theme-ui": "0.3.1"
   },
   "devDependencies": {
     "@drewster/eslint-config": "1.0.2",
