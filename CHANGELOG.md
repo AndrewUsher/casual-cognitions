@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.1.2...v2.2.0) (2020-08-11)
+
+
+### Features
+
+* add yarn offline cache ([506001a](https://github.com/AndrewUsher/casual-cognitions/commit/506001a5055820dd6d2f9b54b5bd2ae8d10e967e))
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby to v2.24.37 ([e421d7b](https://github.com/AndrewUsher/casual-cognitions/commit/e421d7ba5e6b1fc15c0f4e497c31be79740df282))
+* **deps:** update gatsby monorepo ([6d9545c](https://github.com/AndrewUsher/casual-cognitions/commit/6d9545c1e8b341ab07c537e458be286565087524))
+* **deps:** update gatsby monorepo ([43bd874](https://github.com/AndrewUsher/casual-cognitions/commit/43bd8740800ceaf164764b34e09a0c6d1af9a2e9))
+* **deps:** update mdx monorepo to v1.6.16 ([e479bda](https://github.com/AndrewUsher/casual-cognitions/commit/e479bda0c059a73f87bd459d5e31ce55bcbade7e))
+
 ### [2.1.2](https://github.com/AndrewUsher/casual-cognitions/compare/v2.1.1...v2.1.2) (2020-08-04)
 
 ### [2.1.1](https://github.com/AndrewUsher/casual-cognitions/compare/v2.1.0...v2.1.1) (2020-08-04)

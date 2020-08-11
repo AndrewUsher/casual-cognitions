@@ -1,6 +1,6 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: ['@drewster'],
+  extends: ['@drewster/eslint-config/react'],
   env: {
     browser: true,
     es6: true
