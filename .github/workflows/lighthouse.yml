@@ -17,5 +17,5 @@ jobs:
       - run: yarn
       - run: yarn build
       - run: npm install -g @lhci/cli@0.5.x
-      - run: lhci autorun
+      - run: LHCI_TOKEN=${{ secrets.LHCI_TOKEN }} lhci autorun
 
