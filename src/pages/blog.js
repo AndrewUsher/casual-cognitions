@@ -4,6 +4,7 @@ import { graphql, Link } from 'gatsby'
 import { Box, Heading, Input, jsx, Text } from 'theme-ui'
 import { Bio } from '../components/Bio'
 import { Layout } from '../components/Layout'
+import { Helmet } from 'react-helmet'
 
 const inputStyles = {
   border: 'none',
@@ -26,6 +27,7 @@ const BlogIndex = props => {
 
   return (
     <Layout location={props.location} title={siteTitle}>
+      <Helmet meta={{ description: 'Search Casual Cognitions blog posts' }}/>
       <Bio />
       <Input
         id="search-posts"
