@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.2.0...v2.3.0) (2020-09-18)
+
+
+### Features
+
+* add lighthouse check ([7163434](https://github.com/AndrewUsher/casual-cognitions/commit/7163434e5badc481dc73417adafb8c152d1bf140))
+* **blog:** add meta description to blog page ([7ad9b73](https://github.com/AndrewUsher/casual-cognitions/commit/7ad9b73ea173771a2d344a206b20d23f5ebb17a9))
+
+
+### Bug Fixes
+
+* **deps:** update dependency disqus-react to v1.0.10 ([360eccc](https://github.com/AndrewUsher/casual-cognitions/commit/360eccc44425937f536edb78c2f6794ee706101a))
+* **deps:** update gatsby monorepo ([bec65cd](https://github.com/AndrewUsher/casual-cognitions/commit/bec65cdc9680c2734206552dc023ee382da2e094))
+* **deps:** update gatsby monorepo ([898c1bc](https://github.com/AndrewUsher/casual-cognitions/commit/898c1bc9d50056bdf1753c1354752986c75eab55))
+* **deps:** update gatsby monorepo ([93aedec](https://github.com/AndrewUsher/casual-cognitions/commit/93aedecd280108a9d3014812d158e6630bc95e24))
+* **deps:** update gatsby monorepo ([54ed50c](https://github.com/AndrewUsher/casual-cognitions/commit/54ed50cacf3394f9f3bb787c2faa264665f699f8))
+* **deps:** update gatsby monorepo ([a9266fe](https://github.com/AndrewUsher/casual-cognitions/commit/a9266fe66920d7de46c5ea8765cfd5d2cfde093d))
+* **lighthouse:** add LHCI_TOKEN ([9b7d611](https://github.com/AndrewUsher/casual-cognitions/commit/9b7d61112ee6840977d54b262dad579cd9881686))
+
 ## [2.2.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.1.2...v2.2.0) (2020-08-11)
 
 
