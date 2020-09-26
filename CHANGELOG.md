@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.3.0...v2.4.0) (2020-09-26)
+
+
+### Features
+
+* add umami tracking ([3ab2ebd](https://github.com/AndrewUsher/casual-cognitions/commit/3ab2ebd686e1ece3d2d2f82ba20abe10e2838e14))
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([eb3ad85](https://github.com/AndrewUsher/casual-cognitions/commit/eb3ad857355ba3b26889fa2fa9e713bf5394f375))
+* **deps:** update gatsby monorepo ([abee4e0](https://github.com/AndrewUsher/casual-cognitions/commit/abee4e0fad782d4469ac32fa9b8c502621bd6996))
+* **deps:** update mdx monorepo to v1.6.18 ([076c9ea](https://github.com/AndrewUsher/casual-cognitions/commit/076c9ea1e115f16429578ce63b1f5506fda63d96))
+
 ## [2.3.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.2.0...v2.3.0) (2020-09-18)
 
 
