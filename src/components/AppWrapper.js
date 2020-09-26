@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { MDXProvider } from '@mdx-js/react'
 import { preToCodeBlock } from 'mdx-utils'
 import { Code } from './code'
@@ -18,7 +19,12 @@ const components = {
 
 const AppWrapper = ({ element }) => {
   return (
-    <MDXProvider components={components}>{element}</MDXProvider>
+    <>
+      <Helmet>
+        <script async defer data-website-id="c809e2a0-6f33-40fc-82ec-8fb737633bda" src="https://drewster-umami.herokuapp.com/umami.js"></script>
+      </Helmet>
+      <MDXProvider components={components}>{element}</MDXProvider>
+    </>
   )
 }
 
