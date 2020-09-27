@@ -38,9 +38,11 @@
   },
   "devDependencies": {
     "@drewster/eslint-config": "3.0.0",
+    "@testing-library/react": "11.0.4",
     "babel-eslint": "10.1.0",
     "eslint": "7.10.0",
     "husky": "4.3.0",
+    "jest": "26.4.2",
     "standard-version": "9.0.0"
   },
   "homepage": "https://github.com/AndrewUsher/casual-cognitions#readme",
@@ -62,6 +64,8 @@
     "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "jest",
+    "test:coverage": "yarn test --coverage"
   }
 }

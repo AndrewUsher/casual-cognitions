@@ -3,7 +3,8 @@ module.exports = {
   extends: ['@drewster/eslint-config/react'],
   env: {
     browser: true,
-    es6: true
+    es6: true,
+    jest: true
   },
   rules: {
     'react/prop-types': 0,
