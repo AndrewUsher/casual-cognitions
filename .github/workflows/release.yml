@@ -1,0 +1,22 @@
+name: release
+
+on: workflow_dispatch
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: |
+        git config user.email "andrewusher00@gmail.com"
+        git config user.name "Andrew Usher"
+        yarn
+        yarn release
+        git push --follow-tags origin develop
