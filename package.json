@@ -61,6 +61,7 @@
     "clean": "rm -rf public",
     "dev": " gatsby develop --https",
     "build": "gatsby build",
+    "release": "standard-version",
     "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
