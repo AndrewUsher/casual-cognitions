@@ -4,6 +4,12 @@ module.exports = {
     author: 'Andrew Usher',
     social: {
       twitter: 'andrewusher17'
+    },
+    socialLinks: {
+      email: 'mailto:andrewusher00@gmail.com',
+      github: 'https://github.com/AndrewUsher',
+      twitter: 'https://twitter.com/andrewusher17',
+      youtube: 'https://www.youtube.com/user/andrewusher00'
     }
   },
   polyfill: false,
