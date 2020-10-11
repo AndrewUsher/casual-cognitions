@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 2.5.0 (2020-10-11)
+
+
+### Features
+
+* add homepage ([3b852f1](https://github.com/AndrewUsher/casual-cognitions/commit/3b852f186f6fbfac678e8564a6f14e9627f0abf0))
+
 ### 2.4.2 (2020-10-11)
 
 ### 2.4.1 (2020-10-03)
