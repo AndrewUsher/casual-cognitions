@@ -2,6 +2,45 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 2.7.0 (2020-10-23)
+
+
+### Features
+
+* add config files to labeler action ([3115b57](https://github.com/AndrewUsher/casual-cognitions/commit/3115b57a4b93f8e693868861395247be8bc22cb9))
+* add github action for jest ([ce023da](https://github.com/AndrewUsher/casual-cognitions/commit/ce023da6debf3fe87ec4e97a2a0ec0ae8e374919))
+* add homepage ([3b852f1](https://github.com/AndrewUsher/casual-cognitions/commit/3b852f186f6fbfac678e8564a6f14e9627f0abf0))
+* add jest and react-testing-library ([7435290](https://github.com/AndrewUsher/casual-cognitions/commit/7435290fb19bf60bd2ad7abbc5dc5e678b469f18))
+* add lighthouse check ([7163434](https://github.com/AndrewUsher/casual-cognitions/commit/7163434e5badc481dc73417adafb8c152d1bf140))
+* add meta info to homepage ([6fe3c0a](https://github.com/AndrewUsher/casual-cognitions/commit/6fe3c0a622d31ee9a8812e864b9933f9e9bb9404))
+* add react-icons ([fd54f07](https://github.com/AndrewUsher/casual-cognitions/commit/fd54f07c8972bdeeb3e13cb326b0fdb0fb81268a))
+* add release github action ([eb0d01a](https://github.com/AndrewUsher/casual-cognitions/commit/eb0d01af6b646f3ea16fd6caba383099c37ac0ec))
+* add social links to config ([fc14475](https://github.com/AndrewUsher/casual-cognitions/commit/fc14475bf3f39dbec3e21d757634121f860a841c))
+* add umami tracking ([3ab2ebd](https://github.com/AndrewUsher/casual-cognitions/commit/3ab2ebd686e1ece3d2d2f82ba20abe10e2838e14))
+* **blog:** add meta description to blog page ([7ad9b73](https://github.com/AndrewUsher/casual-cognitions/commit/7ad9b73ea173771a2d344a206b20d23f5ebb17a9))
+
+
+### Bug Fixes
+
+* update home styles for mobile ([37ec1fb](https://github.com/AndrewUsher/casual-cognitions/commit/37ec1fb1b2449c91521386d3ecb43dbec22b4d70))
+* **actions:** change fetch-depth for release ([d9fce9f](https://github.com/AndrewUsher/casual-cognitions/commit/d9fce9fed1cdaf777d77a039c557d3a9b7422b72))
+* **deps:** pin dependency react-icons to 3.11.0 ([296fdbe](https://github.com/AndrewUsher/casual-cognitions/commit/296fdbe873372df0ee3f931dfc7c77c3a4314356))
+* **deps:** update dependency disqus-react to v1.0.10 ([360eccc](https://github.com/AndrewUsher/casual-cognitions/commit/360eccc44425937f536edb78c2f6794ee706101a))
+* **deps:** update gatsby monorepo ([e772011](https://github.com/AndrewUsher/casual-cognitions/commit/e77201196dd30a2b99bacaf7a147b234fae218d4))
+* **deps:** update gatsby monorepo ([21218c0](https://github.com/AndrewUsher/casual-cognitions/commit/21218c0ae17db9553f56e4eb6bc3250a2233ba3b))
+* **deps:** update gatsby monorepo ([c7a7c6c](https://github.com/AndrewUsher/casual-cognitions/commit/c7a7c6c9bfb25adc9b069f99e567e793c62ba061))
+* **deps:** update gatsby monorepo ([6b1a019](https://github.com/AndrewUsher/casual-cognitions/commit/6b1a0190f480c55e0299e6aba714c86ec72ef506))
+* **deps:** update gatsby monorepo ([1fbca8d](https://github.com/AndrewUsher/casual-cognitions/commit/1fbca8d9c992b068025b97b1663009c7144d1a22))
+* **deps:** update gatsby monorepo ([d2ff0e1](https://github.com/AndrewUsher/casual-cognitions/commit/d2ff0e1944d4f0b7a6faed11ca43f4b7b513e741))
+* **deps:** update gatsby monorepo ([eb3ad85](https://github.com/AndrewUsher/casual-cognitions/commit/eb3ad857355ba3b26889fa2fa9e713bf5394f375))
+* **deps:** update gatsby monorepo ([abee4e0](https://github.com/AndrewUsher/casual-cognitions/commit/abee4e0fad782d4469ac32fa9b8c502621bd6996))
+* **deps:** update gatsby monorepo ([bec65cd](https://github.com/AndrewUsher/casual-cognitions/commit/bec65cdc9680c2734206552dc023ee382da2e094))
+* **deps:** update gatsby monorepo ([898c1bc](https://github.com/AndrewUsher/casual-cognitions/commit/898c1bc9d50056bdf1753c1354752986c75eab55))
+* **deps:** update gatsby monorepo ([93aedec](https://github.com/AndrewUsher/casual-cognitions/commit/93aedecd280108a9d3014812d158e6630bc95e24))
+* **deps:** update mdx monorepo to v1.6.18 ([076c9ea](https://github.com/AndrewUsher/casual-cognitions/commit/076c9ea1e115f16429578ce63b1f5506fda63d96))
+* **deps:** update react monorepo to v16.14.0 ([3281bc3](https://github.com/AndrewUsher/casual-cognitions/commit/3281bc3eee646cd26925046dcdf55adf1ce4f7ff))
+* **lighthouse:** add LHCI_TOKEN ([9b7d611](https://github.com/AndrewUsher/casual-cognitions/commit/9b7d61112ee6840977d54b262dad579cd9881686))
+
 ## 2.6.0 (2020-10-11)
 
 
