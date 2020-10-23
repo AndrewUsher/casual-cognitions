@@ -11,7 +11,8 @@ const styles = {
     width: '100vw',
     height: '100vh',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: ['flex-start', 'center', 'center'],
+    padding: [4, 0, 0]
   },
   icons: {
     '> a': {
@@ -49,7 +50,7 @@ const IndexPage = ({ location }) => {
         <title>Andrew Usher</title>
         <meta name="description" content="Portfolio/blog for Andrew Usher" />
       </Helmet>
-      <Flex css={styles.introWrapper}>
+      <Flex sx={styles.introWrapper}>
         <Box css={styles.intro}>
           <Heading as="h2">Andrew Usher</Heading>
           <Text sx={styles.paragraph}>
