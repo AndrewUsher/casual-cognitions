@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.1](https://github.com/AndrewUsher/casual-cognitions/compare/v2.7.0...v2.7.1) (2020-11-03)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([e6d4989](https://github.com/AndrewUsher/casual-cognitions/commit/e6d4989e62d1436bbc4b7b89813d8455cd636d44))
+* **deps:** update gatsby monorepo ([67cbd31](https://github.com/AndrewUsher/casual-cognitions/commit/67cbd3147887db1fef05d67785cbe8f2ec303c6d))
+
 ## 2.7.0 (2020-10-23)
 
 
