@@ -14,8 +14,7 @@ module.exports = {
       }
     },
     upload: {
-      target: 'lhci',
-      serverBaseUrl: 'http://drewster-lighthouse-server.herokuapp.com'
+      target: 'temporary-public-storage'
     }
   }
 }
