@@ -26,7 +26,7 @@ const BlogIndex = props => {
   }
 
   return (
-    <Layout location={props.location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <Helmet meta={{ description: 'Search Casual Cognitions blog posts' }}/>
       <Bio />
       <Input

@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.2](https://github.com/AndrewUsher/casual-cognitions/compare/v2.7.1...v2.7.2) (2020-11-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-theme-ui to v0.3.3 ([11dd9b0](https://github.com/AndrewUsher/casual-cognitions/commit/11dd9b077bc223e871eadd25b1a5d066d3324cf8))
+* **deps:** update dependency gatsby-plugin-theme-ui to v0.3.4 ([ae5d918](https://github.com/AndrewUsher/casual-cognitions/commit/ae5d91806c3ce300105deb207b1a821acc5e7095))
+* **deps:** update dependency theme-ui to v0.3.4 ([627f9a3](https://github.com/AndrewUsher/casual-cognitions/commit/627f9a395212efa854bf1b659d2438c52b99d676))
+* **deps:** update mdx monorepo to v1.6.21 ([8b144fc](https://github.com/AndrewUsher/casual-cognitions/commit/8b144fcba1e26041b8efbb0efbeb80d8f627feec))
+* **deps:** update react monorepo to v17 ([cf81de1](https://github.com/AndrewUsher/casual-cognitions/commit/cf81de1607290e734fbc02465f81ac1d15fa4bce))
+
+### [2.7.1](https://github.com/AndrewUsher/casual-cognitions/compare/v2.7.0...v2.7.1) (2020-11-03)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([e6d4989](https://github.com/AndrewUsher/casual-cognitions/commit/e6d4989e62d1436bbc4b7b89813d8455cd636d44))
+* **deps:** update gatsby monorepo ([67cbd31](https://github.com/AndrewUsher/casual-cognitions/commit/67cbd3147887db1fef05d67785cbe8f2ec303c6d))
+
 ## 2.7.0 (2020-10-23)
 
 

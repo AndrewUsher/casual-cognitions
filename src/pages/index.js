@@ -28,7 +28,7 @@ const styles = {
   }
 }
 
-const IndexPage = ({ location }) => {
+const IndexPage = () => {
   const { site: { siteMetadata: { socialLinks } } } = useStaticQuery(graphql`
     {
       site {

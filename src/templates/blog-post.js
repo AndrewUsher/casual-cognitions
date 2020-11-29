@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout title={siteTitle}>
         <Helmet>
           <title>{post.frontmatter.title} | Casual Cognitions</title>
           <meta
