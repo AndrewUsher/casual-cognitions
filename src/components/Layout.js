@@ -1,10 +1,12 @@
 /* @jsx jsx */
 import { Fragment } from 'react'
+import { useLocation } from '@reach/router'
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { Box, jsx, Styled } from 'theme-ui'
 
-const Layout = ({ children, location, title }) => {
+const Layout = ({ children, title }) => {
+  const location = useLocation()
   let header
 
   if (location.pathname === '/' || location.pathname === '/archive' || location.pathname.match(/^\/blog\/?$/)) {
