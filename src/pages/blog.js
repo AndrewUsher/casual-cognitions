@@ -44,6 +44,7 @@ const BlogIndex = props => {
             <Heading as="h2">
               <Link
                 sx={{
+                  py: 12,
                   color: 'inherit',
                   textDecoration: 'none'
                 }}
