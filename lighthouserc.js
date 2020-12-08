@@ -13,7 +13,13 @@ module.exports = {
         interactive: ['error', { maxNumericValue: 5000, aggregationMethod: 'optimistic' }],
         'legacy-javascript': 'off',
         // Turned off until https://github.com/gatsbyjs/gatsby/issues/16097 is resolved
-        'errors-in-console': 'off'
+        'errors-in-console': 'off',
+        'html-has-lang': 'off',
+        'link-name': 'off',
+        'maskable-icon': 'off',
+        'meta-description': 'off',
+        'tap-targets': 'off',
+        'unused-javascript': 'off'
       }
     },
     upload: {
