@@ -21,6 +21,7 @@ const AppWrapper = ({ element }) => {
   return (
     <>
       <Helmet>
+        <link rel="preconnect" href="https://drewster-umami.herokuapp.com" />
         <script async defer data-website-id="c809e2a0-6f33-40fc-82ec-8fb737633bda" src="https://drewster-umami.herokuapp.com/umami.js"></script>
       </Helmet>
       <MDXProvider components={components}>{element}</MDXProvider>
