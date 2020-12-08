@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.8.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.7.2...v2.8.0) (2020-12-08)
+
+
+### Features
+
+* add code of conduct ([648f92f](https://github.com/AndrewUsher/casual-cognitions/commit/648f92fcee72d7a719b1463fcbc85f7b4e048d33))
+* add kodiak ([fc12aae](https://github.com/AndrewUsher/casual-cognitions/commit/fc12aae494fe22e7b80c732ac12eff2d13962368))
+* add preconnect to analytics script ([65ca897](https://github.com/AndrewUsher/casual-cognitions/commit/65ca8974ce08ff7e851df7efaf3d35893101cf6a))
+* **kodiak:** auto update prs ([6a371bf](https://github.com/AndrewUsher/casual-cognitions/commit/6a371bf8249a51e1bed5b20e452f7d8a2cad4541))
+
+
+### Bug Fixes
+
+* **blog:** add extra padding to post links ([bc2b51d](https://github.com/AndrewUsher/casual-cognitions/commit/bc2b51d66bb2f6be4bb1f8ba263739496ecc0178))
+* **deps:** update gatsby monorepo ([ded4632](https://github.com/AndrewUsher/casual-cognitions/commit/ded4632e2a363def58cc76231927da122d4146cc))
+* **deps:** update gatsby monorepo ([4ce0532](https://github.com/AndrewUsher/casual-cognitions/commit/4ce0532a6dc66b7e8598a692480ba060754ecf5b))
+* **deps:** update mdx monorepo to v1.6.22 ([cd0c9d9](https://github.com/AndrewUsher/casual-cognitions/commit/cd0c9d995f25fc8cde1d57970adb7ef5c69ae674))
+
 ### [2.7.2](https://github.com/AndrewUsher/casual-cognitions/compare/v2.7.1...v2.7.2) (2020-11-29)
 
 
