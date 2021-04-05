@@ -59,6 +59,7 @@ const BlogIndex = props => {
               sx={{
                 marginY: 2
               }}
+              as="p"
             />
             <Link
               sx={{
