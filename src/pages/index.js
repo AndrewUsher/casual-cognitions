@@ -53,10 +53,10 @@ const IndexPage = () => {
       <Flex sx={styles.introWrapper}>
         <Box css={styles.intro}>
           <Heading as="h2">Andrew Usher</Heading>
-          <Text sx={styles.paragraph}>
+          <Text sx={styles.paragraph} as="p">
           Howdy! During the day, I am a systems engineer at AutoZone Inc, primarily leading a small team of React developers on the B2C web application.
           </Text>
-          <Text sx={styles.paragraph}>
+          <Text sx={styles.paragraph} as="p">
           During my free time, I like dabbling around with new front end technologies by creating my own projects. When I&apos;m not coding, I like to play basketball and ride my bike throughout downtown Memphis.
           </Text>
           <Flex sx={styles.icons}>
