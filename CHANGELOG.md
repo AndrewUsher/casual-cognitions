@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.9.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.8.0...v2.9.0) (2021-04-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prism-react-renderer to v1.2.0 ([3f8f9de](https://github.com/AndrewUsher/casual-cognitions/commit/3f8f9de94e7e7d8eaea5f7ef38dc5f930b1976f8))
+* **deps:** update dependency react-icons to v4 ([a35001f](https://github.com/AndrewUsher/casual-cognitions/commit/a35001f9526d9ad79ff6913e48308a0d2ddd77d9))
+* **deps:** update dependency react-icons to v4.2.0 ([4696bf1](https://github.com/AndrewUsher/casual-cognitions/commit/4696bf148e112c30a85e23807ca028809af96fd2))
+* **deps:** update dependency theme-ui to v0.6.2 ([33cdd3e](https://github.com/AndrewUsher/casual-cognitions/commit/33cdd3e1f1bd9cf4352cec8349c9019e79c0aeea))
+* **deps:** update gatsby monorepo ([063c066](https://github.com/AndrewUsher/casual-cognitions/commit/063c0667127cfe35d8b09fe2420be365856afb45))
+* **deps:** update gatsby monorepo ([cbc022e](https://github.com/AndrewUsher/casual-cognitions/commit/cbc022e4001ad8b82a5d19edb881e807551721b3))
+* **deps:** update gatsby monorepo ([57469af](https://github.com/AndrewUsher/casual-cognitions/commit/57469af3b6872908d6d403277fb7a398445edbe7))
+* **deps:** update react monorepo to v17.0.2 ([132949f](https://github.com/AndrewUsher/casual-cognitions/commit/132949f73aafcbc7a1d851d2a389a4cf8df78d2c))
+
 ## [2.8.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.7.2...v2.8.0) (2020-12-08)
 
 
