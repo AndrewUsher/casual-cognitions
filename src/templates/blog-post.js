@@ -3,12 +3,7 @@ import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { Helmet } from 'react-helmet'
 import { Bio } from '../components/Bio'
-import { Comments } from '../components/Comments'
 import { Layout } from '../components/Layout'
-
-const Seperator = () => (
-  <hr />
-)
 
 class BlogPostTemplate extends React.Component {
   render () {
@@ -35,12 +30,6 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <MDXRenderer>{post.body}</MDXRenderer>
-        <Seperator />
-        <Comments
-          identifier={this.props.location.pathname}
-          title={post.frontmatter.title}
-        />
-        <Seperator />
         <Bio />
 
         <ul
