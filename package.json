@@ -41,7 +41,7 @@
     "@testing-library/react": "11.2.6",
     "babel-eslint": "10.1.0",
     "eslint": "7.24.0",
-    "husky": "4.3.5",
+    "husky": "6.0.0",
     "jest": "26.6.3",
     "standard-version": "9.2.0"
   },
@@ -69,6 +69,7 @@
     "release:patch": "standard-version --release-as patch",
     "serve": "gatsby serve",
     "test": "jest",
-    "test:coverage": "yarn test --coverage"
+    "test:coverage": "yarn test --coverage",
+    "prepare": "husky install"
   }
 }
