@@ -3,7 +3,6 @@ import { Fragment } from 'react'
 import { Helmet } from 'react-helmet'
 import { Box, Flex, Heading, jsx, Text } from 'theme-ui'
 import { FaGithub, FaRegEnvelope, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { graphql, useStaticQuery } from 'gatsby'
 import { SocialIcon } from '../components/SocialIcon'
 
 const styles = {
@@ -29,21 +28,6 @@ const styles = {
 }
 
 const IndexPage = () => {
-  const { site: { siteMetadata: { socialLinks } } } = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          socialLinks {
-            email
-            github
-            twitter
-            youtube
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <Fragment>
       <Helmet>
@@ -60,10 +44,10 @@ const IndexPage = () => {
           During my free time, I like dabbling around with new front end technologies by creating my own projects. When I&apos;m not coding, I like to play basketball and ride my bike throughout downtown Memphis.
           </Text>
           <Flex sx={styles.icons}>
-            <SocialIcon to={socialLinks.github} Icon={FaGithub} />
-            <SocialIcon to={socialLinks.email} Icon={FaRegEnvelope} />
-            <SocialIcon to={socialLinks.twitter} Icon={FaTwitter} />
-            <SocialIcon to={socialLinks.youtube} Icon={FaYoutube} />
+            <SocialIcon to="https://github.com/AndrewUsher" Icon={FaGithub} />
+            <SocialIcon to="mailto:andrewusher00@gmail.com" Icon={FaRegEnvelope} />
+            <SocialIcon to="https://twitter.com/andrewusher17" Icon={FaTwitter} />
+            <SocialIcon to="https://www.youtube.com/user/andrewusher00" Icon={FaYoutube} />
           </Flex>
         </Box>
       </Flex>
