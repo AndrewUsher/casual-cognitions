@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import { useState } from 'react'
-import { jsx } from 'theme-ui'
+import { jsx, useThemeUI } from 'theme-ui'
 
 const SocialIconStyles = {
   link: {
@@ -9,9 +9,11 @@ const SocialIconStyles = {
 }
 
 const SocialIcon = ({ to, Icon }) => {
+  const { theme } = useThemeUI()
+  console.log(theme.colors)
   const [hovered, setHovered] = useState(false)
   const toggleHover = () => setHovered(s => !s)
-  const iconFill = hovered ? '#7579e7' : '#373a40'
+  const iconFill = hovered ? '#7579e7' : theme.colors.primary
   return (
     <a
       href={to}
