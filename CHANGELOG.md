@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.10.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.9.2...v2.10.0) (2021-08-17)
+
+
+### Features
+
+* update to theme-ui v0.10.1 ([e057da5](https://github.com/AndrewUsher/casual-cognitions/commit/e057da5265b41c2349510f4b6ff9f6787fa538a8))
+
+
+### Bug Fixes
+
+* show only blog content on /blog ([5842fd7](https://github.com/AndrewUsher/casual-cognitions/commit/5842fd74ba44e4a24213df14602c8efada997c0f))
+
 ### [2.9.2](https://github.com/AndrewUsher/casual-cognitions/compare/v2.9.1...v2.9.2) (2021-08-17)
 
 
