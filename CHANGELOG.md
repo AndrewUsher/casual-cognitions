@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.9.2](https://github.com/AndrewUsher/casual-cognitions/compare/v2.9.1...v2.9.2) (2021-08-17)
+
+
+### Bug Fixes
+
+* **header:** use gatsby Link directly for blog link ([0a7df74](https://github.com/AndrewUsher/casual-cognitions/commit/0a7df74b0f01e9bac115c4640dd8572a9173faaa))
+
 ### [2.9.1](https://github.com/AndrewUsher/casual-cognitions/compare/v2.9.0...v2.9.1) (2021-08-17)
 
 
