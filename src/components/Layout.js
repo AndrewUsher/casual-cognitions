@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import { useLocation } from '@reach/router'
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import { Box, jsx, Styled } from 'theme-ui'
+import { Box, jsx, Themed } from 'theme-ui'
 
 const Layout = ({ children, title }) => {
   const location = useLocation()
@@ -11,7 +11,7 @@ const Layout = ({ children, title }) => {
 
   if (location.pathname === '/' || location.pathname === '/archive' || location.pathname.match(/^\/blog\/?$/)) {
     header = (
-      <Styled.h1
+      <Themed.h1
         sx={{
           marginY: 3
         }}
@@ -26,11 +26,11 @@ const Layout = ({ children, title }) => {
         >
           {title}
         </Link>
-      </Styled.h1>
+      </Themed.h1>
     )
   } else {
     header = (
-      <Styled.h2
+      <Themed.h2
         as="h2"
         sx={{
           marginY: 3
@@ -46,7 +46,7 @@ const Layout = ({ children, title }) => {
         >
           {title}
         </Link>
-      </Styled.h2>
+      </Themed.h2>
     )
   }
   return (
