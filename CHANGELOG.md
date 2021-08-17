@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.9.1](https://github.com/AndrewUsher/casual-cognitions/compare/v2.9.0...v2.9.1) (2021-08-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-theme-ui to v0.6.2 ([6f0452b](https://github.com/AndrewUsher/casual-cognitions/commit/6f0452b04e937dea401773f1bdd9973238611a99))
+* **deps:** update gatsby monorepo ([b94cda1](https://github.com/AndrewUsher/casual-cognitions/commit/b94cda16d24bd313f656bf91da0d8a73b0c59808))
+* **deps:** update gatsby monorepo ([b63b907](https://github.com/AndrewUsher/casual-cognitions/commit/b63b907fb452bbef16d57de306bc3d2e832c150a))
+* **header:** use gatsby Link directly for blog link ([f672f0f](https://github.com/AndrewUsher/casual-cognitions/commit/f672f0fa186f38fb5244d4f8ad20a6a7ea2c24fc))
+
 ## [2.9.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.8.0...v2.9.0) (2021-04-10)
 
 
