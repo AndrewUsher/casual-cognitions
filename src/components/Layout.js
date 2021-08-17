@@ -16,9 +16,8 @@ const Layout = ({ children, title }) => {
           marginY: 3
         }}
       >
-        <Styled.a
-          as={Link}
-          style={{
+        <Link
+          sx={{
             boxShadow: 'none',
             textDecoration: 'none',
             color: 'inherit'
@@ -26,7 +25,7 @@ const Layout = ({ children, title }) => {
           to="/blog"
         >
           {title}
-        </Styled.a>
+        </Link>
       </Styled.h1>
     )
   } else {
