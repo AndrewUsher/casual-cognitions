@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Casual Cognitions',
@@ -27,6 +31,18 @@ module.exports = {
       options: {
         path: `${__dirname}/content/pages`,
         name: 'pages'
+      }
+    },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'GitHub',
+        fieldName: 'github',
+        url: 'https://api.github.com/graphql',
+        headers: {
+          Authorization: `bearer ${process.env.GITHUB_TOKEN}`
+        },
+        fetchOptions: {}
       }
     },
     {

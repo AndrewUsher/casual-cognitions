@@ -2,7 +2,7 @@
 import { Fragment } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import { Box, Flex, Heading, jsx, Paragraph, Text } from 'theme-ui'
+import { Box, Card, Flex, Grid, Heading, jsx, Paragraph, Text } from 'theme-ui'
 import { FaGithub, FaRegEnvelope, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 import { SocialIcon } from '../components/SocialIcon'
@@ -49,35 +49,45 @@ const styles = {
 }
 
 const IndexPage = () => {
-  const { allMdx: { nodes: recentPosts }, site: { siteMetadata: { socialLinks } } } = useStaticQuery(graphql`
-    {
-      allMdx(
-        sort: {order: DESC, fields: frontmatter___date}
-        limit: 5
-        filter: {fileAbsolutePath: {regex: "/content/blog/"}}
-      ) {
-        nodes {
-          frontmatter {
-            date(fromNow: true)
-            title
-          }
-          fields {
-            slug
-          }
-          excerpt(pruneLength: 250, truncate: true)
+  const { allMdx: { nodes: recentPosts }, github: { viewer: { repositories: { nodes: repos } } }, site: { siteMetadata: { socialLinks } } } = useStaticQuery(graphql`
+  {
+    allMdx(
+      sort: {order: DESC, fields: frontmatter___date}
+      limit: 5
+      filter: {fileAbsolutePath: {regex: "/content/blog/"}}
+    ) {
+      nodes {
+        frontmatter {
+          date(fromNow: true)
+          title
         }
+        fields {
+          slug
+        }
+        excerpt(pruneLength: 250, truncate: true)
       }
-      site {
-        siteMetadata {
-          socialLinks {
-            email
-            github
-            twitter
-            youtube
+    }
+    github {
+      viewer {
+        repositories(first: 12, orderBy: {field: CREATED_AT, direction: DESC}) {
+          nodes {
+            name
+            description
           }
         }
       }
     }
+    site {
+      siteMetadata {
+        socialLinks {
+          email
+          github
+          twitter
+          youtube
+        }
+      }
+    }
+  }
   `)
 
   console.log(recentPosts)
@@ -114,6 +124,14 @@ const IndexPage = () => {
             </div>
           ))}
           <Heading as="h2" css={styles.introHeading}>Projects</Heading>
+          <Grid gap={3} columns={[1, 2, 2]}>
+            {repos.map(repo => (
+              <Card key={repo.name}>
+                <Heading as="h3" css={styles.subheading}>{repo.name}</Heading>
+                <Paragraph as="p">{repo.description}</Paragraph>
+              </Card>
+            ))}
+          </Grid>
         </Box>
       </Flex>
     </Fragment>
