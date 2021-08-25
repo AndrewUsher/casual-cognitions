@@ -1,9 +1,10 @@
 /* @jsx jsx */
 import { Fragment } from 'react'
 import { Helmet } from 'react-helmet'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import { Box, Flex, Heading, jsx, Paragraph, Text } from 'theme-ui'
 import { FaGithub, FaRegEnvelope, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { graphql, useStaticQuery } from 'gatsby'
+
 import { SocialIcon } from '../components/SocialIcon'
 
 const styles = {
@@ -40,6 +41,10 @@ const styles = {
   subheading: {
     fontSize: 24,
     marginBottom: 8
+  },
+  postTitle: {
+    color: 'inherit',
+    textDecoration: 'none'
   }
 }
 
@@ -55,6 +60,9 @@ const IndexPage = () => {
           frontmatter {
             date(fromNow: true)
             title
+          }
+          fields {
+            slug
           }
           excerpt(pruneLength: 250, truncate: true)
         }
@@ -98,7 +106,9 @@ const IndexPage = () => {
           <Heading as="h2" css={styles.introHeading}>Recent Posts</Heading>
           {recentPosts.map(post => (
             <div key={post.frontmatter.title}>
-              <Heading as="h3" css={styles.subheading}>{post.frontmatter.title}</Heading>
+              <Link href={`/blog${post.fields.slug}`} sx={styles.postTitle}>
+                <Heading as="h3" css={styles.subheading}>{post.frontmatter.title}</Heading>
+              </Link>
               <Paragraph as="p">{post.excerpt}</Paragraph>
               <Paragraph css={styles.publishInfo}>Published {post.frontmatter.date}</Paragraph>
             </div>
