@@ -1,6 +1,7 @@
 ---
 title: 'Lost Some Commits I Know I Made'
 date: '2019-02-23'
+tags: ['git']
 ---
 
 First make sure that it was not on a different branch. Try `git log -Sbar --all` where "bar" is replaced with something unique in the commits you made. You can also search with `gitk --all --date-order` to see if anything looks likely.Check your stashes, `git stash list`, to see if you might have stashed instead of committing. You can also visualize what the stashes might be associated with via:
