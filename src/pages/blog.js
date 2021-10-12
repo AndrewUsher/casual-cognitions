@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import React from 'react'
 import { graphql, Link } from 'gatsby'
+import React from 'react'
+import { Helmet } from 'react-helmet'
 import { Box, Heading, Input, jsx, Text } from 'theme-ui'
 import { Bio } from '../components/Bio'
 import { Layout } from '../components/Layout'
-import { Helmet } from 'react-helmet'
 
 const inputStyles = {
   border: 'none',
@@ -13,6 +13,17 @@ const inputStyles = {
   '&:focus': {
     outline: 'none'
   }
+}
+
+const postTagStyles = {
+  display: 'inline-block',
+  backgroundColor: '#172774',
+  borderRadius: '4px',
+  color: '#fff',
+  mt: 2,
+  mr: 3,
+  px: 3,
+  py: 1
 }
 
 const BlogIndex = props => {
@@ -54,6 +65,11 @@ const BlogIndex = props => {
               </Link>
             </Heading>
             <small>{node.frontmatter.date}</small>
+            <Box>
+              {node.frontmatter.tags.map(tag => (
+                <span sx={postTagStyles} key={tag}>{tag}</span>
+              ))}
+            </Box>
             <Text
               dangerouslySetInnerHTML={{ __html: node.excerpt }}
               sx={{
@@ -98,6 +114,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            tags
           }
         }
       }
