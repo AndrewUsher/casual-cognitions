@@ -1,56 +1,8 @@
-const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const { createBlogPostPages } = require('./gatsby/node/createBlogPostPages')
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
-
-  const blogPost = path.resolve('./src/templates/blog-post.js')
-  return graphql(
-    `
-      {
-        allMdx(
-          filter: { fileAbsolutePath: { regex: "/blog/" } }
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
-              body
-            }
-          }
-        }
-      }
-    `
-  ).then(result => {
-    if (result.errors) {
-      throw result.errors
-    }
-
-    // Create blog posts pages.
-    const posts = result.data.allMdx.edges
-
-    posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
-
-      createPage({
-        path: `/blog${post.node.fields.slug}`,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next
-        }
-      })
-    })
-  })
+exports.createPages = async ({ graphql, actions }) => {
+  await createBlogPostPages({ actions, graphql })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
