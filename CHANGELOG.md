@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.11.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.10.0...v2.11.0) (2021-11-01)
+
+
+### Features
+
+* add blog tags pages ([d4e5dc6](https://github.com/AndrewUsher/casual-cognitions/commit/d4e5dc609fabeeba1a3246b1a502280d2ad20335))
+* add tags to blog posts ([ddc0d71](https://github.com/AndrewUsher/casual-cognitions/commit/ddc0d712eebabb994faed50f7274a491c0e589bb))
+* display tags on blog list ([9ebb77b](https://github.com/AndrewUsher/casual-cognitions/commit/9ebb77b3520b44815b700a247c74f7b130ec9423))
+
+
+### Bug Fixes
+
+* **deps:** update dependency prism-react-renderer to v1.2.1 ([5bb1067](https://github.com/AndrewUsher/casual-cognitions/commit/5bb10673a5dd78e1a994546804ca5e8ca90da9e9))
+* **deps:** update gatsby monorepo ([2d83edd](https://github.com/AndrewUsher/casual-cognitions/commit/2d83edddc22c72427dbd6983bc1849abc6e7a01d))
+* **deps:** update gatsby monorepo ([cc00f99](https://github.com/AndrewUsher/casual-cognitions/commit/cc00f999c764bdfa72448af41ec4a78a445b1298))
+
 ## [2.10.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.9.2...v2.10.0) (2021-08-17)
 
 
