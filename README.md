@@ -7,7 +7,7 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/andrewusher/casual-cognitions)
 ![Travis Build Status](https://travis-ci.com/AndrewUsher/casual-cognitions.svg?branch=master)
 
-
+![Alt](https://repobeats.axiom.co/api/embed/4eb3e4ca0c81d96f5afa3923ea218f7e85facea9.svg "Repobeats analytics image")
 
 ## Getting Started
 
