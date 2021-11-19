@@ -1,9 +1,10 @@
 /* @jsx jsx */
 import { Fragment } from 'react'
 import { Helmet } from 'react-helmet'
-import { Box, Flex, Heading, jsx, Text } from 'theme-ui'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import { Box, Card, Flex, Grid, Heading, jsx, Paragraph, Text } from 'theme-ui'
 import { FaGithub, FaRegEnvelope, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { graphql, useStaticQuery } from 'gatsby'
+
 import { SocialIcon } from '../components/SocialIcon'
 
 const styles = {
@@ -11,38 +12,85 @@ const styles = {
     width: '100vw',
     height: '100vh',
     justifyContent: 'center',
-    alignItems: ['flex-start', 'center', 'center'],
-    padding: [4, 0, 0]
+    alignItems: 'flex-start',
+    padding: [4, 4]
   },
   icons: {
+    marginBottom: 4,
+    marginTop: 4,
     '> a': {
-      marginRight: '12px'
+      marginRight: '20px'
     }
   },
   intro: {
     maxWidth: 500
   },
+  introHeading: {
+    fontSize: 32,
+    marginBottom: 40
+  },
   paragraph: {
-    fontSize: 2,
+    fontSize: 3,
     marginY: 3
+  },
+  publishInfo: {
+    fontWeight: 'bold',
+    marginBottom: 24,
+    marginTop: 4
+  },
+  subheading: {
+    fontSize: 24,
+    marginBottom: 8
+  },
+  postTitle: {
+    color: 'inherit',
+    textDecoration: 'none'
   }
 }
 
 const IndexPage = () => {
-  const { site: { siteMetadata: { socialLinks } } } = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          socialLinks {
-            email
-            github
-            twitter
-            youtube
+  const { allMdx: { nodes: recentPosts }, github: { viewer: { repositories: { nodes: repos } } }, site: { siteMetadata: { socialLinks } } } = useStaticQuery(graphql`
+  {
+    allMdx(
+      sort: {order: DESC, fields: frontmatter___date}
+      limit: 5
+      filter: {fileAbsolutePath: {regex: "/content/blog/"}}
+    ) {
+      nodes {
+        frontmatter {
+          date(fromNow: true)
+          title
+        }
+        fields {
+          slug
+        }
+        excerpt(pruneLength: 250, truncate: true)
+      }
+    }
+    github {
+      viewer {
+        repositories(first: 12, orderBy: {field: CREATED_AT, direction: DESC}) {
+          nodes {
+            name
+            description
           }
         }
       }
     }
+    site {
+      siteMetadata {
+        socialLinks {
+          email
+          github
+          twitter
+          youtube
+        }
+      }
+    }
+  }
   `)
+
+  console.log(recentPosts)
 
   return (
     <Fragment>
@@ -52,7 +100,7 @@ const IndexPage = () => {
       </Helmet>
       <Flex sx={styles.introWrapper}>
         <Box css={styles.intro}>
-          <Heading as="h2">Andrew Usher</Heading>
+          <Heading as="h1">Andrew Usher</Heading>
           <Text sx={styles.paragraph} as="p">
           Howdy! During the day, I am a systems engineer at AutoZone Inc, primarily leading a small team of React developers on the B2C web application.
           </Text>
@@ -65,6 +113,25 @@ const IndexPage = () => {
             <SocialIcon to={socialLinks.twitter} Icon={FaTwitter} />
             <SocialIcon to={socialLinks.youtube} Icon={FaYoutube} />
           </Flex>
+          <Heading as="h2" css={styles.introHeading}>Recent Posts</Heading>
+          {recentPosts.map(post => (
+            <div key={post.frontmatter.title}>
+              <Link href={`/blog${post.fields.slug}`} sx={styles.postTitle}>
+                <Heading as="h3" css={styles.subheading}>{post.frontmatter.title}</Heading>
+              </Link>
+              <Paragraph as="p">{post.excerpt}</Paragraph>
+              <Paragraph css={styles.publishInfo}>Published {post.frontmatter.date}</Paragraph>
+            </div>
+          ))}
+          <Heading as="h2" css={styles.introHeading}>Projects</Heading>
+          <Grid gap={3} columns={[1, 2, 2]}>
+            {repos.map(repo => (
+              <Card key={repo.name}>
+                <Heading as="h3" css={styles.subheading}>{repo.name}</Heading>
+                <Paragraph as="p">{repo.description}</Paragraph>
+              </Card>
+            ))}
+          </Grid>
         </Box>
       </Flex>
     </Fragment>
