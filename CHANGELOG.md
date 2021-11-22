@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.11.0...v3.0.0) (2021-11-22)
+
+
+### Bug Fixes
+
+* add node min version to package.json ([ff578c2](https://github.com/AndrewUsher/casual-cognitions/commit/ff578c268b1489633ba329ed9a08d020e571ed3e))
+* **deps:** update dependency gatsby to v3.14.6 ([5e6e96a](https://github.com/AndrewUsher/casual-cognitions/commit/5e6e96ac7ba7fbf3c47951b320a6400a37eecde5))
+* **deps:** update gatsby monorepo ([2de9488](https://github.com/AndrewUsher/casual-cognitions/commit/2de9488ee4a543f3068bd91d520972b2a53c7fcf))
+
 ## [2.11.0](https://github.com/AndrewUsher/casual-cognitions/compare/v2.10.0...v2.11.0) (2021-11-01)
 
 
