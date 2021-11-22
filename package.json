@@ -7,6 +7,9 @@
   "bugs": {
     "url": "https://github.com/AndrewUsher/casual-cogntions/issues"
   },
+  "engines": {
+    "node": ">=14.15.0"
+  },
   "dependencies": {
     "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
